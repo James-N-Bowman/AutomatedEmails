@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extracted_at": "2026-03-03T10:35:24.309808+00:00",
+        "extracted_at": "2026-03-03T11:32:41.238369+00:00",
         "range": [
             "2026-02-25",
             "2026-03-03"
@@ -479,94 +479,6 @@
                             "memberInfo": null
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": 26731,
-            "name": null,
-            "startDate": "2026-02-25T15:00:00",
-            "endDate": "2026-02-25T15:30:00",
-            "cancelledDate": null,
-            "locationId": null,
-            "location": "TBC",
-            "eventType": {
-                "id": 7,
-                "name": "Formal meeting (private meeting)",
-                "isVisit": false,
-                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
-            },
-            "eventSource": "CIS",
-            "committees": [
-                {
-                    "contact": {
-                        "email": "commonsbtc@parliament.uk",
-                        "phone": "020 7219 8586 (General enquiries) | 020 7219 4984  (media enquiries)",
-                        "address": "Business and Trade Committee, House of Commons, London, SW1A 0AA",
-                        "contactDisclaimer": null
-                    },
-                    "id": 365,
-                    "name": "Business and Trade Committee",
-                    "parentCommittee": null,
-                    "subCommittees": [],
-                    "house": "Commons",
-                    "leadHouse": null,
-                    "category": {
-                        "id": 1,
-                        "name": "Select"
-                    },
-                    "committeeTypes": [
-                        {
-                            "id": 1,
-                            "name": "(HC) Public Standing Orders - Departmental",
-                            "committeeCategory": {
-                                "id": 1,
-                                "name": "Select"
-                            }
-                        }
-                    ],
-                    "showOnWebsite": true,
-                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/business-energy-industrial-strategy/",
-                    "websiteLegacyRedirectEnabled": false,
-                    "startDate": "2016-10-17T00:00:00",
-                    "endDate": null,
-                    "dateCommonsAppointed": "2020-03-02T00:00:00",
-                    "dateLordsAppointed": null,
-                    "scrutinisingDepartments": [],
-                    "isLeadCommittee": true,
-                    "nameHistory": [
-                        {
-                            "id": 357,
-                            "committeeId": 365,
-                            "name": "Business, Energy and Industrial Strategy Committee",
-                            "startDate": "2016-10-17T00:00:00",
-                            "endDate": "2023-04-26T09:17:46"
-                        },
-                        {
-                            "id": 720,
-                            "committeeId": 365,
-                            "name": "Business and Trade Committee",
-                            "startDate": "2023-04-26T09:17:46",
-                            "endDate": null
-                        }
-                    ]
-                }
-            ],
-            "committeeBusinesses": [],
-            "childEvents": null,
-            "nextActivity": null,
-            "activities": [
-                {
-                    "committeeBusinesses": [],
-                    "oralEvidences": [],
-                    "id": 36466,
-                    "name": null,
-                    "startDate": "2026-02-25T15:00:00",
-                    "endDate": "2026-02-25T15:30:00",
-                    "eventId": 26731,
-                    "isPrivate": true,
-                    "activityType": "Private discussion",
-                    "attendees": []
                 }
             ]
         }

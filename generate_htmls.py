@@ -83,21 +83,20 @@ def main():
             E.H1(f"{c_name}", style="font-family: Helvetica, Arial, sans-serif; color: #000; margin-bottom: 20px;")
         ]
 
-        # --- News Section ---
-        if c_news:
-            content_blocks.append(E.H2("News this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
-            for item in c_news:
+        # --- Publications Section ---
+        if c_pubs:
+            content_blocks.append(E.H2("Reports this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            for item in c_pubs:
                 content_blocks.append(create_item_element(
-                    item.get('heading'),
-                    item.get('teaser'),
-                    item.get('url'),
-                    item.get('datePublished'), # Matched to your JSON key
-                    item.get('imageUrl')
+                    item.get('description'),
+                    "New Publication",
+                    item.get('additionalContentUrl'),
+                    item.get('publicationStartDate')
                 ))
 
         # --- Meetings Section ---
         if c_events:
-            content_blocks.append(E.H2("Meetings this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            content_blocks.append(E.H2("Public meetings this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_events:
                 event_id = item.get('id')
                 # Formatted link as requested
@@ -110,15 +109,16 @@ def main():
                     item.get('startDate')
                 ))
 
-        # --- Publications Section ---
-        if c_pubs:
-            content_blocks.append(E.H2("Publications this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
-            for item in c_pubs:
+        # --- News Section ---
+        if c_news:
+            content_blocks.append(E.H2("News this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            for item in c_news:
                 content_blocks.append(create_item_element(
-                    item.get('description'),
-                    "New Publication",
-                    item.get('additionalContentUrl'),
-                    item.get('publicationStartDate')
+                    item.get('heading'),
+                    item.get('teaser'),
+                    item.get('url'),
+                    item.get('datePublished'), # Matched to your JSON key
+                    item.get('imageUrl')
                 ))
 
         # Wrap in full HTML structure

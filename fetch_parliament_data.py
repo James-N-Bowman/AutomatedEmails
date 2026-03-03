@@ -86,11 +86,14 @@ def main():
     }
     raw_events = fetch_all_pages(events_url, events_params)
     # Filter: Keep event if ANY committee ID in the list matches our set
-    events_data = [
+    events_data_part_raw = [
         e for e in raw_events 
         if any(c.get('id') in allowed_ids for c in e.get('committees', []))
     ]
-
+    events_data = [
+        e for e in events_data_part_raw
+        if any(a.get('activityType')=="Oral evidence" for a in e.get('activities',[]))
+    ]
     # --- ENDPOINT 2: Publications ---
     pubs_url = "https://committees-api.parliament.uk/api/Publications"
     pubs_params = {
