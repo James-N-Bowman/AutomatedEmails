@@ -6,6 +6,7 @@ import sys
 API_KEY = os.environ['API_KEY']
 DATA_CENTRE = os.environ['DATA_CENTRE']
 AUDIENCE_ID = os.environ['AUDIENCE_ID']
+CAMPAIGN_FOLDER_ID = "5ed5be8d9a"
 
 GROUP_ID = "3da1d0b028"
 BASE_URL = f"https://{DATA_CENTRE}.api.mailchimp.com/3.0"
@@ -28,7 +29,7 @@ logging.basicConfig(level=logging.ERROR)
 def mailchimp_request(method, path, payload=None, params=None):
     url = BASE_URL + path
     logger.info("Fetching: %s", url)
-    print(method, url, AUTH, payload, params or {}, TIMEOUT, sep="\n")
+    logger.debug(method, url, AUTH, payload, params or {}, TIMEOUT, sep="\n")
     response = requests.request(
         method,
         url,
@@ -112,6 +113,25 @@ def fetch_interests(list_id, interest_category_id):
         offset += PAGE_SIZE
     return interests
 
+
+def fetch_all_campaign_folders():
+    """GET /campaign-folders with pagination (count/offset)."""
+    items = []
+    offset = 0
+    while True:
+        # Mailchimp uses 'count' and 'offset' for pagination across most endpoints
+        data = mailchimp_get("/campaign-folders", params={"count": PAGE_SIZE, "offset": offset})
+        
+        # The root key for this endpoint is 'folders'
+        batch = data.get("folders", [])
+        items.extend(batch)
+        
+        if len(batch) < PAGE_SIZE:
+            break
+        offset += PAGE_SIZE
+    return items
+
+
 def fetch_all_segments(list_id):
     """GET /lists/{list_id}/segments with pagination."""
     segs = []
@@ -181,6 +201,47 @@ def list_all_segments():
         stype = s.get("type") or ""  # 'saved', 'static', 'fuzzy', etc. depends on account
         print(f"{sid},\"{name}\",{stype}")
 
+
+def list_campaign_folders():
+    folders = fetch_all_campaign_folders()
+    
+    if not folders:
+        print("No campaign folders found.")
+        return
+
+    print(f"{'ID':<12} | {'NAME':<30}")
+    print("-" * 45)
+    for folder in folders:
+        # Each folder object contains 'id' and 'name'
+        print(f"{folder['id']:<12} | {folder['name']:<30}")
+
+# =========================
+# CHECK HELPERS
+# =========================
+
+def check_interest_occupancy(interest_id):
+    """
+    Checks if a specific interest has any contacts attached to it.
+    Returns the count of subscribers.
+    """
+
+    path = f"/lists/{AUDIENCE_ID}/interest-categories/{GROUP_ID}/interests/{interest_id}"
+    
+    # Fetch the interest details
+    interest_data = mailchimp_get(path)
+    
+    if interest_data:
+        count = int(interest_data.get("subscriber_count", 0))
+        name = interest_data.get("name", "Unknown Interest")
+        
+        if count > 0:
+            logger.info(f"Success: The interest '{name}' has {count} contact(s).")
+        else:
+            logger.info(f"Notice: The interest '{name}' exists but has 0 contacts.")
+            
+        return count
+    return 0
+
 # =========================
 # CREATION HELPERS
 # =========================
@@ -205,7 +266,6 @@ def create_and_send_weekly_email(
     interest_id, 
     campaign_title, 
     html_content, 
-    folder_id=None,
     subject=DEFAULT_SUBJECT, 
     from_name=DEFAULT_FROM_NAME, 
     reply_to=DEFAULT_REPLY_TO
@@ -224,8 +284,8 @@ def create_and_send_weekly_email(
     }
     
     # Add folder_id if provided to keep the UI clean
-    if folder_id:
-        settings["folder_id"] = folder_id
+    if CAMPAIGN_FOLDER_ID:
+        settings["folder_id"] = CAMPAIGN_FOLDER_ID
 
     # 2. CREATE the campaign
     # This automatically scans the audience for the interest_id members
@@ -290,5 +350,3 @@ def recalculate_campaign_recipients (campaign_id):
     )
 
     print("Campaign recipients refreshed.")
-
-#recalculate_campaign_recipients ("404a9c607e")

@@ -25,8 +25,11 @@ def main():
             cttee_name = row[1].strip()
             interest_id = row[2].strip()
 
-            today = datetime.today()
-            campaign_title = str(today) + " " + cttee_name
+            if check_interest_occupancy(interest_id)==0:
+                logger.info(f"No contacts found for this interest so nobody to send to. Skipping.")
+
+            date_and_time = str(datetime.today())[0:16]
+            campaign_title = f"{cttee_name} {date_and_time}"
             
             # Check if an HTML file exists for this committee
             html_file_path = os.path.join(HTMLS_DIR, f"{cttee_id}.html")
@@ -42,7 +45,6 @@ def main():
                         interest_id, 
                         campaign_title, 
                         html_body, 
-                        folder_id=None,
                         subject=DEFAULT_SUBJECT, 
                         from_name=DEFAULT_FROM_NAME, 
                         reply_to=DEFAULT_REPLY_TO

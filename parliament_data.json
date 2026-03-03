@@ -1,93 +1,12 @@
 {
     "metadata": {
-        "extracted_at": "2026-03-03T00:08:07.387294+00:00",
+        "extracted_at": "2026-03-03T10:35:24.309808+00:00",
         "range": [
             "2026-02-25",
             "2026-03-03"
         ]
     },
     "events": [
-        {
-            "id": 26401,
-            "name": null,
-            "startDate": "2026-03-03T09:45:00",
-            "endDate": "2026-03-03T13:00:00",
-            "cancelledDate": null,
-            "locationId": 20,
-            "location": "Room 20, Palace of Westminster",
-            "eventType": {
-                "id": 7,
-                "name": "Formal meeting (private meeting)",
-                "isVisit": false,
-                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
-            },
-            "eventSource": "CIS",
-            "committees": [
-                {
-                    "contact": {
-                        "email": "standards@parliament.uk",
-                        "phone": "020 7219 6615 (general enquiries) / 0207 219 0969 / CommonsPressOffice@parliament.uk (Media enquiries)",
-                        "address": null,
-                        "contactDisclaimer": null
-                    },
-                    "id": 290,
-                    "name": "Committee on Standards",
-                    "parentCommittee": null,
-                    "subCommittees": [],
-                    "house": "Commons",
-                    "leadHouse": null,
-                    "category": {
-                        "id": 1,
-                        "name": "Select"
-                    },
-                    "committeeTypes": [
-                        {
-                            "id": 3,
-                            "name": "(HC) Public Standing Orders - Domestic",
-                            "committeeCategory": {
-                                "id": 1,
-                                "name": "Select"
-                            }
-                        }
-                    ],
-                    "showOnWebsite": true,
-                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/standards/",
-                    "websiteLegacyRedirectEnabled": false,
-                    "startDate": "2013-01-07T00:00:00",
-                    "endDate": null,
-                    "dateCommonsAppointed": "2020-03-02T00:00:00",
-                    "dateLordsAppointed": null,
-                    "scrutinisingDepartments": [],
-                    "isLeadCommittee": true,
-                    "nameHistory": [
-                        {
-                            "id": 284,
-                            "committeeId": 290,
-                            "name": "Committee on Standards",
-                            "startDate": "2013-01-07T00:00:00",
-                            "endDate": null
-                        }
-                    ]
-                }
-            ],
-            "committeeBusinesses": [],
-            "childEvents": null,
-            "nextActivity": null,
-            "activities": [
-                {
-                    "committeeBusinesses": [],
-                    "oralEvidences": [],
-                    "id": 35984,
-                    "name": null,
-                    "startDate": "2026-03-03T09:45:00",
-                    "endDate": "2026-03-03T13:00:00",
-                    "eventId": 26401,
-                    "isPrivate": true,
-                    "activityType": "Private discussion",
-                    "attendees": []
-                }
-            ]
-        },
         {
             "id": 25890,
             "name": null,
@@ -899,6 +818,19 @@
     ],
     "news": [
         {
+            "heading": "Committee concerns on role of CMA Chair require risk mitigations from ministers \u2013 Pre-Appointment Report ",
+            "teaser": "Committee concerns focus on significant potential conflicts of interest and on challenge to Ministers in investment decisions that deliver market consolidation over improved consumer welfare\u00a0",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-02-26T15:42:25+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/686a6bb587664974ba4c2a00ef93b899/adobestock_439710722_editorial_use_only.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/686a6bb587664974ba4c2a00ef93b899/adobestock_439710722_editorial_use_only.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/365/business-and-trade-committee/news/212195/committee-concerns-on-role-of-cma-chair-require-risk-mitigations-from-ministers-preappointment-report/",
+            "id": 212195,
+            "source_committee_id": 365
+        },
+        {
             "heading": "Call for evidence: Legislative scrutiny of the Courts and Tribunals Bill",
             "teaser": "The Justice Committee has issued a call for evidence to inform its scrutiny of the Courts and Tribunals Bill.",
             "intro": null,
@@ -923,19 +855,6 @@
             "url": "https://committees.parliament.uk/committee/102/justice-committee/news/212075/justice-committee-chair-comment-courts-and-tribunals-bill/",
             "id": 212075,
             "source_committee_id": 102
-        },
-        {
-            "heading": "Committee concerns on role of CMA Chair require risk mitigations from ministers \u2013 Pre-Appointment Report ",
-            "teaser": "Committee concerns focus on significant potential conflicts of interest and on challenge to Ministers in investment decisions that deliver market consolidation over improved consumer welfare\u00a0",
-            "intro": null,
-            "body": null,
-            "datePublished": "2026-02-26T15:42:25+00:00",
-            "imageUrl": "https://www.parliament.uk/contentassets/686a6bb587664974ba4c2a00ef93b899/adobestock_439710722_editorial_use_only.jpeg",
-            "imageAltText": "",
-            "thumbnailUrl": "https://www.parliament.uk/contentassets/686a6bb587664974ba4c2a00ef93b899/adobestock_439710722_editorial_use_only.jpeg?width=300&height=300&mode=crop",
-            "url": "https://committees.parliament.uk/committee/365/business-and-trade-committee/news/212195/committee-concerns-on-role-of-cma-chair-require-risk-mitigations-from-ministers-preappointment-report/",
-            "id": 212195,
-            "source_committee_id": 365
         }
     ]
 }
