@@ -9,6 +9,7 @@ from lxml.html import builder as E
 JSON_FILE = 'parliament_data.json'
 MAPPING_FILE = 'mapping.csv'
 OUTPUT_DIR = 'HTMLs'
+INDEX_FILE = 'index.html'
 
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
@@ -90,6 +91,10 @@ def main():
     except FileNotFoundError:
         print(f"Error: {MAPPING_FILE} not found.")
         return
+
+    # Keep track of generated files for the index
+    generated_committees = []
+
 
     # 3. Process each Committee from the mapping
     for c_id, c_name in committees_map.items():
@@ -216,12 +221,40 @@ def main():
             )
         )
 
-        # Write to file
-        file_path = os.path.join(OUTPUT_DIR, f"{c_id}.html")
+        # Write to file in OUTPUT_DIR
+        file_name = f"{c_id}.html"
+        file_path = os.path.join(OUTPUT_DIR, file_name)
         with open(file_path, 'wb') as f:
             f.write(html.tostring(doc, pretty_print=True, method="html", encoding='utf-8'))
         
+        # Add to our list for the index page
+        generated_committees.append({'id': c_id, 'name': c_name, 'filename': file_name})
         print(f"Generated: {file_path}")
+
+    # --- 4. Generate the Index HTML File ---
+    if generated_committees:
+        index_items = []
+        base_url = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/James-N-Bowman/AutomatedEmails/refs/heads/main/HTMLs/"
+        
+        for item in generated_committees:
+            full_url = f"{base_url}{item['filename']}"
+            index_items.append(
+                E.LI(
+                    E.A(item['name'], href=full_url, style="color: #005ea5; text-decoration: underline;")
+                )
+            )
+
+        index_doc = E.HTML(
+            E.BODY(
+                E.H1("Committee Email Previews", style="font-family: Helvetica, Arial, sans-serif;"),
+                E.UL(*index_items, style="font-family: Helvetica, Arial, sans-serif; line-height: 1.8;"),
+                style="padding: 40px; background-color: #f9f9f9;"
+            )
+        )
+
+        with open(INDEX_FILE, 'wb') as f:
+            f.write(html.tostring(index_doc, pretty_print=True, method="html", encoding='utf-8'))
+        print(f"Generated Index: {INDEX_FILE}")
 
 if __name__ == "__main__":
     main()
