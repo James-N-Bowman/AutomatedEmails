@@ -234,7 +234,7 @@ def main():
     # --- 4. Generate the Index HTML File ---
     if generated_committees:
         index_items = []
-        base_url = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/James-N-Bowman/AutomatedEmails/refs/heads/main/HTMLs/"
+        base_url = "https://raw.githubusercontent.com/James-N-Bowman/AutomatedEmails/refs/heads/main/HTMLs/"
         
         for item in generated_committees:
             full_url = f"{base_url}{item['filename']}"
