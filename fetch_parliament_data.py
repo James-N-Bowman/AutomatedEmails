@@ -4,15 +4,19 @@ import json
 import requests
 
 import helpersCSVMapping
+import helpersLogging
+
+helpersLogging.SimpleLogger('fetch_logger','INFO')
 
 # 1. Setup Dates
 # Use timezone.utc to make these "offset-aware"
-today = datetime.now(timezone.utc)
-six_days_ago = today - timedelta(days=6)
+
+now = datetime.now(timezone.utc)
+yesterday = now - timedelta(days=1)
 
 # Format for API: 'YYYY-MM-DD'
-START_DATE = six_days_ago.strftime('%Y-%m-%d')
-END_DATE = today.strftime('%Y-%m-%d')
+START_DATE = yesterday.strftime('%Y-%m-%d')
+END_DATE = yesterday.strftime('%Y-%m-%d')
 
 def fetch_all_pages(base_url, params, date_field=None):
     """Generic function to handle pagination via the 'Skip' parameter."""
@@ -45,7 +49,7 @@ def fetch_all_pages(base_url, params, date_field=None):
                 item_value = item['value']
                 # Use fromisoformat and ensure it handles the 'Z' correctly as UTC
                 item_date = datetime.fromisoformat(item_value[date_field].replace('Z', '+00:00'))
-                if item_date >= six_days_ago:
+                if item_date >= yesterday:
                     filtered_items.append(item_value)
                 else:
                     stop_pagination = True
@@ -131,7 +135,7 @@ def main():
 
     # Update the news key in your output dictionary
     output = {
-        "metadata": {"extracted_at": today.isoformat(), "range": [START_DATE, END_DATE]},
+        "metadata": {"extracted_at": now.isoformat(), "range": [START_DATE, END_DATE]},
         "events": events_data,
         "publications": pubs_data,
         "news": all_news_data  # Changed from news_data to all_news_data

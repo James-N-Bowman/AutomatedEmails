@@ -1,6 +1,6 @@
 import json
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 from lxml import html
 from lxml.html import builder as E
@@ -9,12 +9,11 @@ from lxml.html import builder as E
 JSON_FILE = 'parliament_data.json'
 MAPPING_FILE = 'mapping.csv'
 OUTPUT_DIR = 'docs/HTMLs'
-INDEX_FILE = 'docs/index.html'
 
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
-def create_meeting_element (title, link, witness_blocks=None):
+def create_meeting_element(title, link, witness_blocks=None):
     """Creates a consistent HTML block for an item, now with optional witness lists."""
     elements = []
         
@@ -92,9 +91,8 @@ def main():
         print(f"Error: {MAPPING_FILE} not found.")
         return
 
-    # Keep track of generated files for the index
-    generated_committees = []
-
+    # All committee content blocks go into a single list
+    all_content_blocks = []
 
     # 3. Process each Committee from the mapping
     for c_id, c_name in committees_map.items():
@@ -102,7 +100,6 @@ def main():
         c_news = [n for n in data.get('news', []) if str(n.get('source_committee_id')) == c_id]
         
         # --- Events Filtering ---
-        # Checks if the committee ID is in the list of committee dictionaries for the event
         c_events = [
             e for e in data.get('events', []) 
             if any(str(comm.get('id')) == c_id for comm in e.get('committees', []))
@@ -114,22 +111,22 @@ def main():
             if str(p.get('committee', {}).get('id')) == c_id
         ]
 
-        # Only create a file if there is relevant content
+        # Only include content if there is something relevant
         if not (c_news or c_events or c_pubs):
             print(f"Skipping Committee {c_id}: No new content.")
             continue
 
-        # Build HTML Content
-        content_blocks = [
+        # Committee heading
+        all_content_blocks.append(
             E.H1(f"{c_name}", style="font-family: Helvetica, Arial, sans-serif; color: #000; margin-bottom: 20px;")
-        ]
+        )
 
         # --- Publications Section ---
         if c_pubs:
-            content_blocks.append(E.H2("Reports this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            all_content_blocks.append(E.H2("Reports this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_pubs:
                 friendly_date = format_date(item.get('publicationStartDate'))
-                content_blocks.append(create_publication_element(
+                all_content_blocks.append(create_publication_element(
                     item.get('description'), 
                     item.get('additionalContentUrl'),
                     friendly_date
@@ -137,7 +134,7 @@ def main():
 
         # --- Meetings Section ---
         if c_events:
-            content_blocks.append(E.H2("Public meetings this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            all_content_blocks.append(E.H2("Public meetings this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_events:
                 event_id = item.get('id')
                 link = f"https://committees.parliament.uk/event/{event_id}/formal-meeting-private-meeting/"
@@ -170,11 +167,9 @@ def main():
                         context = person.get('additionalContext')
                         
                         if orgs:
-                            # Format: Name (Role at Organisation)
                             role_info = f"{orgs[0].get('role')} at {orgs[0].get('name')}"
                             attendee_lis.append(E.LI(f"{name} ({role_info})"))
                         elif context:
-                            # Format: Name (AdditionalContext)
                             attendee_lis.append(E.LI(f"{name} ({context})"))
                         else:
                             attendee_lis.append(E.LI(name))
@@ -192,7 +187,7 @@ def main():
                             )
                         )
 
-                content_blocks.append(create_meeting_element(
+                all_content_blocks.append(create_meeting_element(
                     display_title,
                     link,
                     witness_blocks=witness_blocks
@@ -200,12 +195,10 @@ def main():
 
         # --- News Section ---
         if c_news:
-            content_blocks.append(E.H2("News this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            all_content_blocks.append(E.H2("News this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_news:
-
                 friendly_date = format_date(item.get('datePublished'))
-
-                content_blocks.append(create_news_element(
+                all_content_blocks.append(create_news_element(
                     item.get('heading'),
                     item.get('url'),
                     item.get('teaser'),
@@ -213,48 +206,31 @@ def main():
                     item.get('imageUrl')
                 ))
 
-        # Wrap in full HTML structure
+        # Spacer between committees
+        all_content_blocks.append(
+            E.HR(style="border: none; border-top: 4px solid #005ea5; margin: 40px 0;")
+        )
+
+        print(f"Processed committee: {c_name}")
+
+    # 4. Write everything to a single file named after yesterday's date
+    if all_content_blocks:
+        yesterday = datetime.now() - timedelta(days=1)
+        output_filename = yesterday.strftime("%Y-%m-%d") + ".html"
+        output_path = os.path.join(OUTPUT_DIR, output_filename)
+
         doc = E.HTML(
             E.BODY(
-                E.DIV(*content_blocks, style="font-family: Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; line-height: 1.5;"),
+                E.DIV(*all_content_blocks, style="font-family: Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; line-height: 1.5;"),
                 style="margin: 0; padding: 20px; background-color: #ffffff;"
             )
         )
 
-        # Write to file in OUTPUT_DIR
-        file_name = f"{c_id}.html"
-        file_path = os.path.join(OUTPUT_DIR, file_name)
-        with open(file_path, 'wb') as f:
+        with open(output_path, 'wb') as f:
             f.write(html.tostring(doc, pretty_print=True, method="html", encoding='utf-8'))
-        
-        # Add to our list for the index page
-        generated_committees.append({'id': c_id, 'name': c_name, 'filename': file_name})
-        print(f"Generated: {file_path}")
-
-    # --- 4. Generate the Index HTML File ---
-    if generated_committees:
-        index_items = []
-        base_url = "https://james-n-bowman.github.io/AutomatedEmails/HTMLs/"
-        
-        for item in generated_committees:
-            full_url = f"{base_url}{item['filename']}"
-            index_items.append(
-                E.LI(
-                    E.A(item['name'], href=full_url, style="color: #005ea5; text-decoration: underline;")
-                )
-            )
-
-        index_doc = E.HTML(
-            E.BODY(
-                E.H1("Committee Email Previews", style="font-family: Helvetica, Arial, sans-serif;"),
-                E.UL(*index_items, style="font-family: Helvetica, Arial, sans-serif; line-height: 1.8;"),
-                style="padding: 40px; background-color: #f9f9f9;"
-            )
-        )
-
-        with open(INDEX_FILE, 'wb') as f:
-            f.write(html.tostring(index_doc, pretty_print=True, method="html", encoding='utf-8'))
-        print(f"Generated Index: {INDEX_FILE}")
+        print(f"Generated: {output_path}")
+    else:
+        print("No content found for any committee. No file generated.")
 
 if __name__ == "__main__":
     main()
