@@ -262,66 +262,126 @@ def create_group_interest(name):
     )
     return interest
 
-def create_and_send_weekly_email(
-    interest_id, 
-    campaign_title, 
-    html_content, 
-    subject=DEFAULT_SUBJECT, 
-    from_name=DEFAULT_FROM_NAME, 
+def create_template(html_content):
+    """
+    Creates a MailChimp template containing the HTML content.
+
+    Using a template rather than the campaign content 'html' field is necessary
+    because the content endpoint runs the HTML through a sanitiser that strips
+    *|IF:INTERESTS:id|* merge tags before they can be evaluated. The templates
+    endpoint does not apply this sanitiser, so merge tags are preserved intact.
+
+    :param html_content: Full HTML string including *|IF:INTERESTS:id|* blocks.
+    :returns: The created template's ID.
+    """
+    # The template HTML must be a complete document with a single mc:edit region.
+    # MailChimp injects the content of that region verbatim, preserving merge tags.
+    template_html = f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<div mc:edit="body">
+{html_content}
+</div>
+</body>
+</html>"""
+
+    payload = {
+        "name": "committee_update_template",
+        "html": template_html
+    }
+    response = mailchimp_post("/templates", payload)
+    template_id = response["id"]
+    logger.info(f"Created template: {template_id}")
+    return template_id
+
+
+def delete_template(template_id):
+    """Deletes a MailChimp template by ID. Used to clean up after sending."""
+    mailchimp_request("DELETE", f"/templates/{template_id}")
+    logger.info(f"Deleted template: {template_id}")
+
+
+def create_and_send_campaign(
+    interest_ids,
+    campaign_title,
+    html_content,
+    subject=DEFAULT_SUBJECT,
+    from_name=DEFAULT_FROM_NAME,
     reply_to=DEFAULT_REPLY_TO
 ):
     """
-    Creates a new campaign for a specific interest, 
-    sets the HTML content, and sends it immediately.
+    Creates a single campaign targeted at any subscriber who belongs to at least
+    one of the supplied interest IDs, sets the HTML content via a template
+    (to preserve *|IF:INTERESTS:id|* merge tags), and sends immediately.
+
+    The segment uses 'interestcontains' with all interest IDs so that the campaign
+    is only delivered to subscribers with at least one matching interest, preventing
+    blank emails being sent to unmatched subscribers.
+
+    :param interest_ids: List of MailChimp interest IDs to target (match any one).
+    :param campaign_title: Title shown in the MailChimp UI.
+    :param html_content: Full HTML body string containing per-committee
+                         *|IF:INTERESTS:id|* conditional blocks.
+    :param subject: Email subject line.
+    :param from_name: Sender display name.
+    :param reply_to: Email reply-to address.
     """
-    
-    # 1. Setup the Campaign Settings
+
+    # 1. Create a temporary template to carry the HTML content.
+    #    This bypasses the campaign content sanitiser that strips merge tags.
+    template_id = create_template(html_content)
+
+    # 2. Setup campaign settings
     settings = {
         "title": campaign_title,
         "subject_line": subject,
         "from_name": from_name,
         "reply_to": reply_to
     }
-    
-    # Add folder_id if provided to keep the UI clean
     if CAMPAIGN_FOLDER_ID:
         settings["folder_id"] = CAMPAIGN_FOLDER_ID
 
-    # 2. CREATE the campaign
-    # This automatically scans the audience for the interest_id members
+    # 3. CREATE the campaign, referencing the template.
+    #    The segment uses 'interestcontains' with all interest IDs so only
+    #    subscribers matched to at least one committee receive the email.
     payload = {
         "type": "regular",
         "recipients": {
             "list_id": AUDIENCE_ID,
             "segment_opts": {
-                "match": "all",
+                "match": "any",
                 "conditions": [
                     {
                         "condition_type": "Interests",
                         "field": f"interests-{GROUP_ID}",
                         "op": "interestcontains",
-                        "value": [interest_id]
+                        "value": interest_ids
                     }
                 ]
             }
         },
         "settings": settings
     }
-    
+
     campaign = mailchimp_post("/campaigns", payload)
     campaign_id = campaign["id"]
-    logger.info(f"Created new campaign: {campaign_id}")
+    logger.info(f"Created campaign: {campaign_id}")
 
-    # 3. SET THE CONTENT
-    # We use the ID returned from the step above
-    mailchimp_put(f"/campaigns/{campaign_id}/content", {"html": html_content})
-    logger.info(f"HTML content uploaded to {campaign_id}")
+    # 4. SET THE CONTENT from the template
+    mailchimp_put(
+        f"/campaigns/{campaign_id}/content",
+        {"template": {"id": template_id}}
+    )
+    logger.info(f"Template {template_id} applied to campaign {campaign_id}")
 
-    # 4. SEND the campaign
-    # This fires the email to everyone currently in that interest group
+    # 5. SEND the campaign
     mailchimp_post(f"/campaigns/{campaign_id}/actions/send")
-    
-    print(f"Success: '{campaign_title}' sent to interest {interest_id}!")
+    print(f"Success: '{campaign_title}' sent to {len(interest_ids)} interest group(s)!")
+
+    # 6. Clean up the temporary template
+    #delete_template(template_id)
+
     return campaign_id
 
 # =========================

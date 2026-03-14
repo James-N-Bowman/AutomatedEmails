@@ -8,7 +8,7 @@ from lxml.html import builder as E
 # --- Setup ---
 JSON_FILE = 'parliament_data.json'
 MAPPING_FILE = 'mapping.csv'
-OUTPUT_DIR = 'docs/HTMLs'
+OUTPUT_DIR = 'docs'
 
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
@@ -30,8 +30,8 @@ def create_news_element(title, link, teaser_text, date_text, img_url=None):
     """Creates a consistent HTML block for an item, now with optional witness lists."""
     elements = []
     
-    if img_url:
-        elements.append(E.IMG(src=img_url, style="max-width:100%; height:auto; display:block; margin-bottom:10px;"))
+    # if img_url:
+    #     elements.append(E.IMG(src=img_url, style="max-width:100%; height:auto; display:block; margin-bottom:10px;"))
     
     # Title as a link
     elements.append(E.A(E.B(title), href=link, style="font-size: 1.1em; color: #005ea5; text-decoration: underline;"))
@@ -78,7 +78,7 @@ def main():
         print(f"Error: {JSON_FILE} not found.")
         return
 
-    # 2. Load Mapping (ID -> Name)
+    # 2. Load Mapping (ID -> Name, interest_id)
     committees_map = {}
     try:
         with open(MAPPING_FILE, mode='r', encoding='utf-8') as f:
@@ -86,16 +86,23 @@ def main():
             next(reader)  # Skip header
             for row in reader:
                 if row:
-                    committees_map[row[0].strip()] = row[1].strip()
+                    committees_map[row[0].strip()] = {
+                        'name': row[1].strip(),
+                        'interest_id': row[2].strip() if len(row) > 2 else ''
+                    }
     except FileNotFoundError:
         print(f"Error: {MAPPING_FILE} not found.")
         return
 
-    # All committee content blocks go into a single list
-    all_content_blocks = []
+    # All committee content segments go into a single list.
+    # Each entry is a raw string (MailChimp merge tags + rendered HTML),
+    # because lxml would escape *|...|* syntax if passed through the element tree.
+    all_segments = []
 
     # 3. Process each Committee from the mapping
-    for c_id, c_name in committees_map.items():
+    for c_id, c_info in committees_map.items():
+        c_name = c_info['name']
+        c_interest_id = c_info['interest_id']
         # --- News Filtering ---
         c_news = [n for n in data.get('news', []) if str(n.get('source_committee_id')) == c_id]
         
@@ -116,17 +123,20 @@ def main():
             print(f"Skipping Committee {c_id}: No new content.")
             continue
 
+        # Collect lxml elements for this committee's content
+        committee_blocks = []
+
         # Committee heading
-        all_content_blocks.append(
+        committee_blocks.append(
             E.H1(f"{c_name}", style="font-family: Helvetica, Arial, sans-serif; color: #000; margin-bottom: 20px;")
         )
 
         # --- Publications Section ---
         if c_pubs:
-            all_content_blocks.append(E.H2("Reports this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            committee_blocks.append(E.H2("Reports yesterday", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_pubs:
                 friendly_date = format_date(item.get('publicationStartDate'))
-                all_content_blocks.append(create_publication_element(
+                committee_blocks.append(create_publication_element(
                     item.get('description'), 
                     item.get('additionalContentUrl'),
                     friendly_date
@@ -134,7 +144,7 @@ def main():
 
         # --- Meetings Section ---
         if c_events:
-            all_content_blocks.append(E.H2("Public meetings this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            committee_blocks.append(E.H2("Public meetings yesterday", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_events:
                 event_id = item.get('id')
                 link = f"https://committees.parliament.uk/event/{event_id}/formal-meeting-private-meeting/"
@@ -187,7 +197,7 @@ def main():
                             )
                         )
 
-                all_content_blocks.append(create_meeting_element(
+                committee_blocks.append(create_meeting_element(
                     display_title,
                     link,
                     witness_blocks=witness_blocks
@@ -195,10 +205,10 @@ def main():
 
         # --- News Section ---
         if c_news:
-            all_content_blocks.append(E.H2("News this week", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
+            committee_blocks.append(E.H2("News yesterday", style="border-bottom: 2px solid #005ea5; padding-bottom: 5px;"))
             for item in c_news:
                 friendly_date = format_date(item.get('datePublished'))
-                all_content_blocks.append(create_news_element(
+                committee_blocks.append(create_news_element(
                     item.get('heading'),
                     item.get('url'),
                     item.get('teaser'),
@@ -207,27 +217,47 @@ def main():
                 ))
 
         # Spacer between committees
-        all_content_blocks.append(
+        committee_blocks.append(
             E.HR(style="border: none; border-top: 4px solid #005ea5; margin: 40px 0;")
+        )
+
+        # Render this committee's lxml elements to an HTML string
+        committee_html = ''.join(
+            html.tostring(block, pretty_print=True, method="html", encoding='unicode')
+            for block in committee_blocks
+        )
+
+        # Wrap in MailChimp conditional merge tags so only subscribers
+        # signed up to this committee's interest_id see the block.
+        # The merge tags are placed inside a <div> so they sit within a valid
+        # HTML element — MailChimp's HTML sanitiser strips bare text nodes
+        # (including merge tags) that are direct children of the outer div.
+        all_segments.append(
+            f'*|INTERESTED:Select Committees:{c_name}|*<div>\n{committee_html}\n</div>*|END:INTERESTED|*'
         )
 
         print(f"Processed committee: {c_name}")
 
     # 4. Write everything to a single file named after yesterday's date
-    if all_content_blocks:
-        yesterday = datetime.now() - timedelta(days=1)
+    if all_segments:
+        yesterday = datetime.now() - timedelta(days=3)
         output_filename = yesterday.strftime("%Y-%m-%d") + ".html"
         output_path = os.path.join(OUTPUT_DIR, output_filename)
 
-        doc = E.HTML(
-            E.BODY(
-                E.DIV(*all_content_blocks, style="font-family: Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; line-height: 1.5;"),
-                style="margin: 0; padding: 20px; background-color: #ffffff;"
-            )
+        # Write only the inner content div — no <html> or <body> wrapper.
+        # MailChimp wraps the HTML in its own shell when sending; supplying
+        # your own <html>/<body> tags can cause MailChimp to rewrite the
+        # structure before evaluating merge tags, which prevents
+        # *|INTERESTED:...|* blocks from being processed correctly.
+        inner_content = '\n'.join(all_segments)
+        full_html = (
+            '<div style="font-family: Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; line-height: 1.5;">\n'
+            f'{inner_content}'
+            '</div>'
         )
 
-        with open(output_path, 'wb') as f:
-            f.write(html.tostring(doc, pretty_print=True, method="html", encoding='utf-8'))
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(full_html)
         print(f"Generated: {output_path}")
     else:
         print("No content found for any committee. No file generated.")

@@ -12,7 +12,7 @@ helpersLogging.SimpleLogger('fetch_logger','INFO')
 # Use timezone.utc to make these "offset-aware"
 
 now = datetime.now(timezone.utc)
-yesterday = now - timedelta(days=1)
+yesterday = now - timedelta(days=3)
 
 # Format for API: 'YYYY-MM-DD'
 START_DATE = yesterday.strftime('%Y-%m-%d')
