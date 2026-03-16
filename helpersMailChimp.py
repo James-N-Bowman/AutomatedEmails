@@ -15,9 +15,9 @@ AUTH = ("jbanystring", API_KEY)  # Mailchimp uses HTTP Basic Auth
 TIMEOUT  = 30
 PAGE_SIZE = 1000  # use large pages to minimize round-trips
 
-DEFAULT_FROM_NAME = "Automated Reports"
+DEFAULT_FROM_NAME = "Committee e-alerts"
 DEFAULT_REPLY_TO = "committeecorridor@parliament.uk"
-DEFAULT_SUBJECT = "Automated Committee Update"
+DEFAULT_SUBJECT = "Committee e-alerts"
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.ERROR)
@@ -287,7 +287,7 @@ def create_template(html_content):
 </html>"""
 
     payload = {
-        "name": "committee_update_template",
+        "name": "e-alert template",
         "html": template_html
     }
     response = mailchimp_post("/templates", payload)
@@ -380,7 +380,7 @@ def create_and_send_campaign(
     print(f"Success: '{campaign_title}' sent to {len(interest_ids)} interest group(s)!")
 
     # 6. Clean up the temporary template
-    #delete_template(template_id)
+    delete_template(template_id)
 
     return campaign_id
 

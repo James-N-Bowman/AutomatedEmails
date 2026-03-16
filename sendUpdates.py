@@ -60,7 +60,7 @@ def main():
 
     # 4. Build a single campaign title using today's date/time
     date_and_time = str(datetime.today()-timedelta(2))[0:16]
-    campaign_title = f"Committee Update {date_and_time}"
+    campaign_title = f"E-alert {date_and_time}"
 
     # 5. Create and send one campaign targeted at anyone subscribed to
     #    at least one of the committee interest groups
