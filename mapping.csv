@@ -1,6 +1,5 @@
 cttee_id,cttee_name,interest_id
 365,Business and Trade Committee,d0b68be033
-15,Committees on Arms Export Controls,7d4daaef92
 378,"Culture, Media and Sport Committee",d923a01dbe
 24,Defence Committee,ea90547c65
 203,Education Committee,1197523e4d
@@ -13,7 +12,6 @@ cttee_id,cttee_name,interest_id
 98,International Development Committee,2d510295c2
 102,Justice Committee,f4bfe07b04
 120,Northern Ireland Affairs Committee,90140ead89
-326,Petitions Committee,9acd6ec629
 135,"Science, Innovation and Technology Committee",3ac12952d5
 136,Scottish Affairs Committee,0f213d68d7
 153,Transport Committee,203ea269cd
