@@ -2,6 +2,7 @@ import json
 import csv
 from datetime import datetime, timedelta
 import os
+
 from lxml import html
 from lxml.html import builder as E
 

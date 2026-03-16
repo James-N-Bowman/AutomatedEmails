@@ -2,7 +2,7 @@ import csv
 from datetime import datetime, timedelta
 import os
 
-from helpersMailChimp import *
+from helpers_mailchimp import *
 
 MAPPING_FILE = 'mapping.csv'
 HTML_DIR = 'docs'

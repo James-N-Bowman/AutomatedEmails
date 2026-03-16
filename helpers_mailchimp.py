@@ -1,7 +1,8 @@
 import logging
 import os
-import requests
 import sys
+
+import requests
 
 API_KEY = os.environ['API_KEY']
 DATA_CENTRE = os.environ['DATA_CENTRE']

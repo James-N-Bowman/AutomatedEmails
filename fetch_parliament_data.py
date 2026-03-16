@@ -1,13 +1,14 @@
 import json
 import logging
-import requests
 from datetime import datetime, timedelta, timezone
 
-import helpersCSVMapping
-import helpersLogging
+import requests
+
+import helpers_mapping_csv
+import helpers_logging
 
 # Initialize Logger
-helpersLogging.SimpleLogger('fetch_logger', 'INFO')
+helpers_logging.SimpleLogger('fetch_logger', 'INFO')
 logger = logging.getLogger('fetch_logger')
 
 # --- Configuration & Constants ---
@@ -74,7 +75,7 @@ def is_old_news(item):
 def main():
     # --- Step 0: Load Allowed Committee IDs ---
     try:
-        allowed_ids = helpersCSVMapping.fetch_cttee_ids_from_mapping_CSV()
+        allowed_ids = helpers_mapping_csv.fetch_cttee_ids_from_mapping_CSV()
     except FileNotFoundError:
         logger.error("Critical Error: mapping.csv not found.")
         return
