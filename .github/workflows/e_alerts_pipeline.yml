@@ -3,6 +3,9 @@ name: Run E-Alerts Pipeline
 on:
   repository_dispatch:
     types: [cron-trigger]
+  
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
 
 jobs:
   run-pipeline:
@@ -12,15 +15,13 @@ jobs:
       contents: write
 
     env:
-      # Add your API credentials as repository secrets and map them here.
-      # Example:
-      # MY_API_KEY: ${{ secrets.MY_API_KEY }}
+      API_KEY: ${{ secrets.API_KEY }}
+      AUDIENCE_ID: ${{ secrets.AUDIENCE_ID }}
+      DATA_CENTRE: ${{ secrets.DATA_CENTRE }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
