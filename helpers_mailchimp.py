@@ -17,7 +17,7 @@ TIMEOUT  = 30
 PAGE_SIZE = 1000  # use large pages to minimize round-trips
 
 DEFAULT_FROM_NAME = "Committee e-alerts"
-DEFAULT_REPLY_TO = "committeecorridor@parliament.uk"
+DEFAULT_REPLY_TO = "committeecorridor@email.parliament.uk"
 DEFAULT_SUBJECT = "Committee e-alerts"
 
 logger = logging.getLogger(__name__)
@@ -377,7 +377,7 @@ def create_and_send_campaign(
     logger.info(f"Template {template_id} applied to campaign {campaign_id}")
 
     # 5. SEND the campaign
-    mailchimp_post(f"/campaigns/{campaign_id}/actions/send")
+    #mailchimp_post(f"/campaigns/{campaign_id}/actions/send")
     print(f"Success: '{campaign_title}' sent to {len(interest_ids)} interest group(s)!")
 
     # 6. Clean up the temporary template
