@@ -377,7 +377,7 @@ def create_and_send_campaign(
     logger.info(f"Template {template_id} applied to campaign {campaign_id}")
 
     # 5. SEND the campaign
-    #mailchimp_post(f"/campaigns/{campaign_id}/actions/send")
+    ailchimp_post(f"/campaigns/{campaign_id}/actions/send")
     print(f"Success: '{campaign_title}' sent to {len(interest_ids)} interest group(s)!")
 
     # 6. Clean up the temporary template
