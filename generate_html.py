@@ -154,7 +154,7 @@ def main():
         committee_blocks.append(E.H1(f"{c_name}"))
 
         if c_pubs:
-            committee_blocks.append(E.H2("Reports yesterday"))
+            committee_blocks.append(E.H2("Reports"))
             for item in c_pubs:
                 committee_blocks.append(create_publication_element(
                     item.get('description'), 
@@ -163,7 +163,7 @@ def main():
                 ))
 
         if c_events:
-            committee_blocks.append(E.H2("Public meetings yesterday"))
+            committee_blocks.append(E.H2("Public meetings"))
             for item in c_events:
                 link = f"https://committees.parliament.uk/event/{item.get('id')}/formal-meeting-private-meeting/"
                 activities = item.get('activities', []) or []
@@ -205,7 +205,7 @@ def main():
                 committee_blocks.append(create_meeting_element(display_title, link, witness_blocks))
 
         if c_news:
-            committee_blocks.append(E.H2("News yesterday"))
+            committee_blocks.append(E.H2("News"))
             for item in c_news:
                 committee_blocks.append(create_news_element(
                     item.get('heading'),
