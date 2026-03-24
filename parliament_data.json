@@ -1,26 +1,65 @@
 {
     "metadata": {
-        "extracted_at": "2026-03-17T10:20:25.444169+00:00",
+        "extracted_at": "2026-03-24T12:24:43.609576+00:00",
         "range": [
-            "2026-03-14",
-            "2026-03-14"
+            "2026-03-21",
+            "2026-03-21"
         ]
     },
     "events": [],
     "publications": [],
     "news": [
         {
-            "heading": "New inquiry: MPs to examine child poverty in Wales",
-            "teaser": "The Welsh Affairs Committee is to examine child poverty in Wales, in a new inquiry launched today.",
+            "heading": " Children\u2019s end of life services among areas that desperately need addressing in reforms to palliative care, says Health Committee",
+            "teaser": "A new report by the Health and Social Care Committee challenges the Government to ensure its forthcoming",
             "intro": null,
             "body": null,
-            "datePublished": "2026-03-16T17:24:31+00:00",
-            "imageUrl": "https://www.parliament.uk/contentassets/654763e989204560886e317bf4578583/marc-pell-dn6qdlxzo5a-unsplash.jpg",
+            "datePublished": "2026-03-24T00:01:06+00:00",
+            "imageUrl": "https://www.parliament.uk/globalassets/house-of-commons/news-story-image-template-1.png",
             "imageAltText": "",
-            "thumbnailUrl": "https://www.parliament.uk/contentassets/654763e989204560886e317bf4578583/marc-pell-dn6qdlxzo5a-unsplash.jpg?width=300&height=300&mode=crop",
-            "url": "/external/committees/news/2026/march/wac_new_inquiry_mps_to_examine_child_poverty_in_wales/",
-            "id": 212683,
-            "source_committee_id": 162
+            "thumbnailUrl": "https://www.parliament.uk/globalassets/house-of-commons/news-story-image-template-1.png?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/81/health-and-social-care-committee/news/212824/childrens-end-of-life-services-among-areas-that-desperately-need-addressing-in-reforms-to-palliative-care-says-health-committee/",
+            "id": 212824,
+            "source_committee_id": 81
+        },
+        {
+            "heading": "PM responds to IDC Chair on reversing aid cuts ",
+            "teaser": "The Prime Minster has told the Chair of the International Development Committee that increasing aid spending will be a priority \u201cwhen resources permit\u201d.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-24T09:16:02+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/27e53896a7ff436c99aa479a00ebd8f0/sarah-champion-ns.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/27e53896a7ff436c99aa479a00ebd8f0/sarah-champion-ns.jpg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/98/international-development-committee/news/212829/pm-responds-to-idc-chair-on-reversing-aid-cuts/",
+            "id": 212829,
+            "source_committee_id": 98
+        },
+        {
+            "heading": "IDC report finds Govt losing hard-won gains for women and girls as aid cuts bite ",
+            "teaser": "IDC report finds Govt losing hard-won gains for women and girls as aid cuts bite",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-23T00:15:00+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/48767d2fceba40459a511ee2a76acac9/woman-and-children-un-women-54055539051_449df2256e_o.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/48767d2fceba40459a511ee2a76acac9/woman-and-children-un-women-54055539051_449df2256e_o.jpg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/98/international-development-committee/news/212805/idc-report-finds-govt-losing-hardwon-gains-for-women-and-girls-as-aid-cuts-bite/",
+            "id": 212805,
+            "source_committee_id": 98
+        },
+        {
+            "heading": "MPs call for joined-up approach and one-stop shop for SMEs to support economic growth across Northern Ireland",
+            "teaser": "MPs are today calling for the UK Government to ensure its economic strategy for Northern Ireland is aligned with that of the NI Executive, in a cross-party report that also calls for greater support for small and medium-sized enterprises and a commitment to fund investment in skills and infrastructure.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-23T00:15:03+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/bab3d3138e5a43aba65d428f7de35acc/committee-chair-portcullis.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/bab3d3138e5a43aba65d428f7de35acc/committee-chair-portcullis.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/120/northern-ireland-affairs-committee/news/212801/mps-call-for-joinedup-approach-and-onestop-shop-for-smes-to-support-economic-growth-across-northern-ireland/",
+            "id": 212801,
+            "source_committee_id": 120
         }
     ]
 }
