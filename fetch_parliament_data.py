@@ -14,7 +14,7 @@ logger = logging.getLogger('fetch_logger')
 # --- Configuration & Constants ---
 PAGE_SIZE = 30
 UTC_NOW = datetime.now(timezone.utc)
-YESTERDAY = UTC_NOW - timedelta(days=3)
+YESTERDAY = UTC_NOW - timedelta(days=1)
 
 # API Date Formats
 START_DATE_STR = YESTERDAY.strftime('%Y-%m-%d')

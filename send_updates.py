@@ -38,7 +38,7 @@ def main():
         return
 
     # 3. Locate yesterday's HTML file (produced by the HTML-generation script)
-    yesterday = datetime.now() - timedelta(days=3)
+    yesterday = datetime.now() - timedelta(days=1)
     html_filename = yesterday.strftime("%Y-%m-%d") + ".html"
     html_file_path = os.path.join(HTML_DIR, html_filename)
 

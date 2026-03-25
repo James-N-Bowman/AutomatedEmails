@@ -227,7 +227,7 @@ def main():
         )
 
     if all_segments:
-        yesterday = datetime.now() - timedelta(days=3)
+        yesterday = datetime.now() - timedelta(days=1)
         output_filename = yesterday.strftime("%Y-%m-%d") + ".html"
         output_path = os.path.join(OUTPUT_DIR, output_filename)
 
