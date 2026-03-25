@@ -65,3 +65,16 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Send Pushover Alert on Failure
+        if: failure()
+        run: |
+          curl -s \
+            --form-string "token=${{ secrets.PUSHOVER_APP_TOKEN }}" \
+            --form-string "user=${{ secrets.PUSHOVER_USER_KEY }}" \
+            --form-string "title=Critical Workflow Failure" \
+            --form-string "message=GitHub Action failed in $GITHUB_REPOSITORY. Immediate attention required." \
+            --form-string "priority=2" \
+            --form-string "retry=30" \
+            --form-string "expire=300" \
+            https://api.pushover.net/1/messages.json

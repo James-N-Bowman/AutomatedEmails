@@ -1,5 +1,5 @@
 import csv
-from datetime import datetime, timedelta
+from datetime import datetime
 import os
 
 from helpers_mailchimp import *
@@ -37,9 +37,9 @@ def main():
         print("No subscribers found across all interests. Aborting.")
         return
 
-    # 3. Locate yesterday's HTML file (produced by the HTML-generation script)
-    yesterday = datetime.now() - timedelta(days=1)
-    html_filename = yesterday.strftime("%Y-%m-%d") + ".html"
+    # 3. Locate today's HTML file (produced by the HTML-generation script)
+    today = datetime.now()
+    html_filename = today.strftime("%Y-%m-%d") + ".html"
     html_file_path = os.path.join(HTML_DIR, html_filename)
 
     if not os.path.exists(html_file_path):
@@ -59,7 +59,7 @@ def main():
         return
 
     # 4. Build a single campaign title using today's date/time
-    date_and_time = str(datetime.today()-timedelta(2))[0:16]
+    date_and_time = str(datetime.today())[0:16]
     campaign_title = f"E-alert {date_and_time}"
 
     # 5. Create and send one campaign targeted at anyone subscribed to

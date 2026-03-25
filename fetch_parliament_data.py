@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from datetime import datetime, timedelta, timezone
 
 import requests
@@ -10,6 +11,8 @@ import helpers_logging
 # Initialize Logger
 helpers_logging.SimpleLogger('fetch_logger', 'INFO')
 logger = logging.getLogger('fetch_logger')
+
+OUTPUT_DIR = 'docs'
 
 # --- Configuration & Constants ---
 PAGE_SIZE = 30
@@ -139,11 +142,14 @@ def main():
         "news": all_news_data
     }
 
-    filename = 'parliament_data.json'
-    with open(filename, 'w') as f:
+    today = datetime.now()
+    output_filename = today.strftime("%Y-%m-%d") + ".json"
+    output_path = os.path.join(OUTPUT_DIR, output_filename)
+
+    with open(output_path, 'w') as f:
         json.dump(output, f, indent=4)
     
-    logger.info(f"Saved to {filename}: {len(events_data)} Events, "
+    logger.info(f"Saved to {output_path}: {len(events_data)} Events, "
                 f"{len(pubs_data)} Pubs, {len(all_news_data)} News.")
 
 if __name__ == "__main__":

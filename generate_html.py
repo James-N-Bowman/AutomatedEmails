@@ -1,13 +1,12 @@
 import json
 import csv
-from datetime import datetime, timedelta
+from datetime import datetime
 import os
 
 from lxml import html
 from lxml.html import builder as E
 
 # --- Setup ---
-JSON_FILE = 'parliament_data.json'
 MAPPING_FILE = 'mapping.csv'
 OUTPUT_DIR = 'docs'
 
@@ -111,11 +110,16 @@ def format_date(date_str):
         return ""
 
 def main():
+
+    today = datetime.now()
+    json_file = today.strftime("%Y-%m-%d") + ".json"
+    json_path = os.path.join(OUTPUT_DIR, json_file)
+
     try:
-        with open(JSON_FILE, 'r') as f:
+        with open(json_path, 'r') as f:
             data = json.load(f)
     except FileNotFoundError:
-        print(f"Error: {JSON_FILE} not found.")
+        print(f"Error: {json_path} not found.")
         return
 
     committees_map = {}
@@ -227,8 +231,9 @@ def main():
         )
 
     if all_segments:
-        yesterday = datetime.now() - timedelta(days=1)
-        output_filename = yesterday.strftime("%Y-%m-%d") + ".html"
+
+        today = datetime.now()
+        output_filename = today.strftime("%Y-%m-%d") + ".html"
         output_path = os.path.join(OUTPUT_DIR, output_filename)
 
         inner_content = '\n'.join(all_segments)

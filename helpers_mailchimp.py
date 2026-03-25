@@ -4,6 +4,8 @@ import sys
 
 import requests
 
+bing_bong
+
 API_KEY = os.environ['API_KEY']
 DATA_CENTRE = os.environ['DATA_CENTRE']
 AUDIENCE_ID = os.environ['AUDIENCE_ID']
@@ -378,7 +380,7 @@ def create_and_send_campaign(
 
     # 5. SEND the campaign
     #mailchimp_post(f"/campaigns/{campaign_id}/actions/send")
-    print(f"Success: '{campaign_title}' sent to {len(interest_ids)} interest group(s)!")
+    #print(f"Success: '{campaign_title}' sent to {len(interest_ids)} interest group(s)!")
 
     # 6. Clean up the temporary template
     delete_template(template_id)
