@@ -1,7 +1,8 @@
 import json
 import logging
 import os
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, time
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -16,12 +17,13 @@ OUTPUT_DIR = 'docs'
 
 # --- Configuration & Constants ---
 PAGE_SIZE = 30
-UTC_NOW = datetime.now(timezone.utc)
-YESTERDAY = UTC_NOW - timedelta(days=1)
 
-# API Date Formats
-START_DATE_STR = YESTERDAY.strftime('%Y-%m-%d')
-END_DATE_STR = YESTERDAY.strftime('%Y-%m-%d')
+uk_tz = ZoneInfo("Europe/London")
+uk_time_now = datetime.now(uk_tz)
+uk_8am_today = datetime.combine(uk_time_now.date(), time(8, 0), tzinfo=uk_tz)
+uk_8am_yesterday = uk_8am_today - timedelta(days=1)
+yesterday_param = uk_8am_yesterday.strftime('%Y-%m-%d')
+today_param = uk_8am_today.strftime('%Y-%m-%d')
 
 def fetch_all_pages(base_url, params, stop_condition=None):
     """
@@ -73,7 +75,13 @@ def is_old_news(item):
         return False
     # Handle ISO format and UTC 'Z'
     pub_date = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))
-    return pub_date < YESTERDAY
+    return pub_date < uk_8am_yesterday
+
+def is_recent_publication(item):
+    pub_start_date_str = item.get('publicationStartDate','')
+    pub_start_date_naive = datetime.fromisoformat(pub_start_date_str)
+    pub_start_date = pub_start_date_naive.replace(tzinfo=uk_tz)
+    return pub_start_date > uk_8am_yesterday
 
 def main():
     # --- Step 0: Load Allowed Committee IDs ---
@@ -87,8 +95,8 @@ def main():
     # Date logic handled via API params
     events_params = {
         'GroupChildEventsWithParent': 'false',
-        'StartDateFrom': START_DATE_STR,
-        'StartDateTo': END_DATE_STR,
+        'StartDateFrom': yesterday_param,
+        'StartDateTo': today_param,
         'ExcludeCancelledEvents': 'true',
         'House': 'Commons',
         'IncludeEventAttendees': 'true',
@@ -106,8 +114,8 @@ def main():
     # Date logic handled via API params
     pubs_params = {
         'PublicationTypeIds': [1, 12],
-        'StartDate': START_DATE_STR,
-        'EndDate': END_DATE_STR,
+        'StartDate': yesterday_param,
+        'EndDate': today_param,
         'SortOrder': 'PublicationDateDescending',
         'ShowOnWebsiteOnly': 'true'
     }
@@ -115,7 +123,7 @@ def main():
     
     pubs_data = [
         p for p in raw_pubs 
-        if p.get('committee', {}).get('id') in allowed_ids
+        if p.get('committee', {}).get('id') in allowed_ids and is_recent_publication(p)
     ]
 
     # --- ENDPOINT 3: Committee News ---
@@ -134,8 +142,8 @@ def main():
     # --- Step 4: Output ---
     output = {
         "metadata": {
-            "extracted_at": UTC_NOW.isoformat(), 
-            "range": [START_DATE_STR, END_DATE_STR]
+            "extracted_at": uk_time_now.isoformat(), 
+            "range": [uk_8am_yesterday.isoformat(), uk_8am_today.isoformat()]
         },
         "events": events_data,
         "publications": pubs_data,
