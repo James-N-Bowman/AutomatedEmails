@@ -2,6 +2,7 @@ import json
 import logging
 import os
 from datetime import datetime, timedelta, time
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
@@ -153,6 +154,10 @@ def main():
     today = datetime.now()
     output_filename = today.strftime("%Y-%m-%d") + ".json"
     output_path = os.path.join(OUTPUT_DIR, output_filename)
+
+    # This ensures the 'docs' directory is created if it doesn't exist
+    # parents=True allows creating nested folders; exist_ok=True prevents errors if it's already there
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
 
     with open(output_path, 'w') as f:
         json.dump(output, f, indent=4)
