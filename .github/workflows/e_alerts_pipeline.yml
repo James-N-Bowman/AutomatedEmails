@@ -70,7 +70,7 @@ jobs:
         if: failure()
         run: |
           curl -s \
-            --form-string "token=${{ secrets.PUSHOVER_APP_TOKEN }}" \
+            --form-string "token=${{ secrets.PUSHOVER_API_TOKEN }}" \
             --form-string "user=${{ secrets.PUSHOVER_USER_KEY }}" \
             --form-string "title=Critical Workflow Failure" \
             --form-string "message=GitHub Action failed in $GITHUB_REPOSITORY. Immediate attention required." \
