@@ -4,8 +4,6 @@ import sys
 
 import requests
 
-bing_bong
-
 API_KEY = os.environ['API_KEY']
 DATA_CENTRE = os.environ['DATA_CENTRE']
 AUDIENCE_ID = os.environ['AUDIENCE_ID']
