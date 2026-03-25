@@ -1,14 +1,27 @@
 {
     "metadata": {
-        "extracted_at": "2026-03-24T12:48:35.315201+00:00",
+        "extracted_at": "2026-03-25T09:31:33.426305+00:00",
         "range": [
-            "2026-03-21",
-            "2026-03-21"
+            "2026-03-22",
+            "2026-03-22"
         ]
     },
     "events": [],
     "publications": [],
     "news": [
+        {
+            "heading": "Pre-appointment hearing: Government\u2019s preferred candidate for Armed Forces Commissioner, Polly Miller-Perkins",
+            "teaser": "The Defence Committee will hold a pre-appointment hearing for the Government\u2019s preferred candidate \u2013 Polly Miller-Perkins \u2013 for the position of Armed Forces Commissioner. ",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-24T15:51:00+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/0b686b45e0a7466a92cb4f66ee0cb9d4/select-committee-room-ns.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/0b686b45e0a7466a92cb4f66ee0cb9d4/select-committee-room-ns.jpg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/24/defence-committee/news/212845/preappointment-hearing-governments-preferred-candidate-for-armed-forces-commissioner-polly-millerperkins/",
+            "id": 212845,
+            "source_committee_id": 24
+        },
         {
             "heading": " Children\u2019s end of life services among areas that desperately need addressing in reforms to palliative care, says Health Committee",
             "teaser": "A new report by the Health and Social Care Committee challenges the Government to ensure its forthcoming",
