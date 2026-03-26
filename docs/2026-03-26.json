@@ -1,0 +1,2406 @@
+{
+    "metadata": {
+        "extracted_at": "2026-03-26T08:00:36.126359+00:00",
+        "range": [
+            "2026-03-25T08:00:00+00:00",
+            "2026-03-26T08:00:00+00:00"
+        ]
+    },
+    "events": [
+        {
+            "id": 26804,
+            "name": null,
+            "startDate": "2026-03-26T09:30:00",
+            "endDate": "2026-03-26T12:30:00",
+            "cancelledDate": null,
+            "locationId": 10,
+            "location": "The Grimond Room, Portcullis House",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "pubaccom@parliament.uk",
+                        "phone": "020 7219 8480 (strictly media enquiries only \u2013 contact us via our email for general enquiries)",
+                        "address": "Public Accounts Committee, House of Commons, London, SW1A 0AA",
+                        "contactDisclaimer": null
+                    },
+                    "id": 127,
+                    "name": "Public Accounts Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 22,
+                            "name": "(HC) Public Standing Orders - Cross-cutting",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/public-accounts-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1978-11-01T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 125,
+                            "committeeId": 127,
+                            "name": "Public Accounts Committee",
+                            "startDate": "1978-11-01T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9098,
+                    "title": "Civil service pensions",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-05-06T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "pubaccom@parliament.uk",
+                        "phone": "020 7219 8480 (strictly media enquiries only \u2013 contact us via our email for general enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": {
+                "committeeBusinesses": [
+                    {
+                        "id": 9098,
+                        "title": "Civil service pensions",
+                        "type": {
+                            "id": 1,
+                            "name": "Inquiry",
+                            "isInquiry": true,
+                            "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                        },
+                        "openDate": "2025-05-06T00:00:00",
+                        "closeDate": null,
+                        "latestReport": null,
+                        "openSubmissionPeriods": [],
+                        "closedSubmissionPeriods": [],
+                        "nextOralEvidenceSession": null,
+                        "contact": {
+                            "email": "pubaccom@parliament.uk",
+                            "phone": "020 7219 8480 (strictly media enquiries only \u2013 contact us via our email for general enquiries)",
+                            "address": null,
+                            "contactDisclaimer": null
+                        }
+                    }
+                ],
+                "oralEvidences": [],
+                "id": 36602,
+                "name": null,
+                "startDate": "2026-03-26T09:30:00",
+                "endDate": "2026-03-26T10:00:00",
+                "eventId": 26804,
+                "isPrivate": true,
+                "activityType": "Private discussion",
+                "attendees": []
+            },
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9098,
+                            "title": "Civil service pensions",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-05-06T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "pubaccom@parliament.uk",
+                                "phone": "020 7219 8480 (strictly media enquiries only \u2013 contact us via our email for general enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36602,
+                    "name": null,
+                    "startDate": "2026-03-26T09:30:00",
+                    "endDate": "2026-03-26T10:00:00",
+                    "eventId": 26804,
+                    "isPrivate": true,
+                    "activityType": "Private discussion",
+                    "attendees": []
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9098,
+                            "title": "Civil service pensions",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-05-06T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "pubaccom@parliament.uk",
+                                "phone": "020 7219 8480 (strictly media enquiries only \u2013 contact us via our email for general enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36603,
+                    "name": null,
+                    "startDate": "2026-03-26T10:00:00",
+                    "endDate": "2026-03-26T12:00:00",
+                    "eventId": 26804,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Capita Public Services",
+                                    "role": "Chief Executive Officer",
+                                    "idmsId": null,
+                                    "cisId": 111132
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34283,
+                            "personId": 47416,
+                            "name": "Richard Holroyd",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "Capita Public Services",
+                                    "role": "Managing Director",
+                                    "idmsId": null,
+                                    "cisId": 111132
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34284,
+                            "personId": 116113,
+                            "name": "Chris Clements",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26073,
+            "name": null,
+            "startDate": "2026-03-25T09:15:00",
+            "endDate": "2026-03-25T12:00:00",
+            "cancelledDate": null,
+            "locationId": 11,
+            "location": "Room 8, Palace of Westminster",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "transcom@parliament.uk",
+                        "phone": "020 7219 2226/ Text relay: 18001 020 2226 (general enquiries) | 020 7219 8895 (media enquiries)",
+                        "address": "Transport Committee, House of Commons, London, SW1A 0AA/ Twitter: @TransportCttee",
+                        "contactDisclaimer": "Please note: The Transport Committee examines policy issues relating to the Department for Transport and its associated bodies. It is unable to investigate, or adjudicate on, individual cases."
+                    },
+                    "id": 153,
+                    "name": "Transport Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/transport-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1979-05-03T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 151,
+                            "committeeId": 153,
+                            "name": "Transport Committee",
+                            "startDate": "1979-05-03T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9523,
+                    "title": "Supercharging the EV transition",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-12-18T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "transcom@parliament.uk",
+                        "phone": "020 7219 2226/ Text relay: 18001 020 2226 (general enquiries) | 020 7219 8895 (media enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9523,
+                            "title": "Supercharging the EV transition",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-12-18T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "transcom@parliament.uk",
+                                "phone": "020 7219 2226/ Text relay: 18001 020 2226 (general enquiries) | 020 7219 8895 (media enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36755,
+                    "name": null,
+                    "startDate": "2026-03-25T09:15:00",
+                    "endDate": "2026-03-25T10:15:00",
+                    "eventId": 26073,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "British Vehicle Rental and Leasing Association (BVRLA)",
+                                    "role": "Chief Executive Officer",
+                                    "idmsId": null,
+                                    "cisId": 105586
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34475,
+                            "personId": 47113,
+                            "name": "Toby Poston",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "EVA England",
+                                    "role": "Chief Executive Officer",
+                                    "idmsId": null,
+                                    "cisId": 99375
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34476,
+                            "personId": 115936,
+                            "name": "Dr Vicky Edmonds",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Auto Trader",
+                                    "role": "Head of Strategy and Insights",
+                                    "idmsId": null,
+                                    "cisId": 99393
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34478,
+                            "personId": 81875,
+                            "name": "Marc Palmer",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 4,
+                            "organisations": [
+                                {
+                                    "name": "Energy and Climate Change Unit",
+                                    "role": "Head of Transport",
+                                    "idmsId": "https://id.parliament.uk/NDvbdozM",
+                                    "cisId": 33615
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34613,
+                            "personId": 115791,
+                            "name": "Mr Colin Walker",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9523,
+                            "title": "Supercharging the EV transition",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-12-18T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "transcom@parliament.uk",
+                                "phone": "020 7219 2226/ Text relay: 18001 020 2226 (general enquiries) | 020 7219 8895 (media enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36759,
+                    "name": null,
+                    "startDate": "2026-03-25T10:15:00",
+                    "endDate": "2026-03-25T12:00:00",
+                    "eventId": 26073,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Welch Group",
+                                    "role": "Head of Solutions",
+                                    "idmsId": null,
+                                    "cisId": 111691
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34479,
+                            "personId": 118147,
+                            "name": "Jamie Sands",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Transport and Environment UK",
+                                    "role": "UK Director",
+                                    "idmsId": null,
+                                    "cisId": 111080
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34600,
+                            "personId": 118296,
+                            "name": "Anna Krajinska",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 4,
+                            "organisations": [
+                                {
+                                    "name": "Road Haulage Association",
+                                    "role": "UK Public Affairs and Policy Director",
+                                    "idmsId": "https://id.parliament.uk/oVHGA8PM",
+                                    "cisId": 70540
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34601,
+                            "personId": 118297,
+                            "name": "David Boot",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26356,
+            "name": "Women and Equalities Committee",
+            "startDate": "2026-03-25T14:00:00",
+            "endDate": "2026-03-25T16:30:00",
+            "cancelledDate": null,
+            "locationId": 13,
+            "location": "Room 6, Palace of Westminster",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "womeqcom@parliament.uk",
+                        "phone": "(General enquiries) 020 7219 4452",
+                        "address": "Committee Office, House of Commons, Palace of Westminster, SW1A 0AA",
+                        "contactDisclaimer": "We cannot help you with an individual problem or specific complaint."
+                    },
+                    "id": 328,
+                    "name": "Women and Equalities Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/women-and-equalities-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "2015-06-03T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2024-10-28T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 322,
+                            "committeeId": 328,
+                            "name": "Women and Equalities Committee",
+                            "startDate": "2015-06-03T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9673,
+                    "title": "Effectiveness of Equality, Diversity and Inclusion initiatives",
+                    "type": {
+                        "id": 2,
+                        "name": "Non-inquiry session",
+                        "isInquiry": false,
+                        "description": "Non-inquiry sessions are brief packages of work that will not necessarily result in a report. They may be used to revisit previous inquiry topics or take evidence on a topical matter."
+                    },
+                    "openDate": "2026-03-10T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "womeqcom@parliament.uk",
+                        "phone": "(General enquiries) 020 7219 4452",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [],
+                    "oralEvidences": [],
+                    "id": 36669,
+                    "name": "Women and Equalities Committee",
+                    "startDate": "2026-03-25T14:00:00",
+                    "endDate": "2026-03-25T14:20:00",
+                    "eventId": 26356,
+                    "isPrivate": true,
+                    "activityType": "Private discussion",
+                    "attendees": []
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9673,
+                            "title": "Effectiveness of Equality, Diversity and Inclusion initiatives",
+                            "type": {
+                                "id": 2,
+                                "name": "Non-inquiry session",
+                                "isInquiry": false,
+                                "description": "Non-inquiry sessions are brief packages of work that will not necessarily result in a report. They may be used to revisit previous inquiry topics or take evidence on a topical matter."
+                            },
+                            "openDate": "2026-03-10T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "womeqcom@parliament.uk",
+                                "phone": "(General enquiries) 020 7219 4452",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36676,
+                    "name": "Women and Equalities Committee",
+                    "startDate": "2026-03-25T14:20:00",
+                    "endDate": "2026-03-25T16:30:00",
+                    "eventId": 26356,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Queen Mary University London",
+                                    "role": "Reader and Associate Professor",
+                                    "idmsId": null,
+                                    "cisId": 95137
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34334,
+                            "personId": 117676,
+                            "name": "Dr Louise Ashley",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "Chartered Institute of Personnel and Development (CIPD)",
+                                    "role": "Chief Executive",
+                                    "idmsId": null,
+                                    "cisId": 100549
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34335,
+                            "personId": 117677,
+                            "name": "Peter Cheese",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 4,
+                            "organisations": [
+                                {
+                                    "name": "Policy Exchange",
+                                    "role": "Director of Research and Head of Education and Science",
+                                    "idmsId": "https://id.parliament.uk/7mwOMCnr",
+                                    "cisId": 65957
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34337,
+                            "personId": 117679,
+                            "name": "Iain Mansfield",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 5,
+                            "organisations": [
+                                {
+                                    "name": "Half the Sky",
+                                    "role": "Founder and Director",
+                                    "idmsId": null,
+                                    "cisId": 7188
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34338,
+                            "personId": 117680,
+                            "name": "Dr Zoe Young",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 6,
+                            "organisations": [
+                                {
+                                    "name": "London Business School",
+                                    "role": "Professor of Finance",
+                                    "idmsId": "https://id.parliament.uk/9SRfpyUR",
+                                    "cisId": 52568
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34594,
+                            "personId": 118289,
+                            "name": "Professor Alex Edmans",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26581,
+            "name": "Connectivity in Scotland \u2013 Session 2",
+            "startDate": "2026-03-25T09:00:00",
+            "endDate": "2026-03-25T11:30:00",
+            "cancelledDate": null,
+            "locationId": 8,
+            "location": "Room 15, Palace of Westminster",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "scotaffcom@parliament.uk",
+                        "phone": "020 7219 1810 (general enquiries) | 020 7219 0731 (media inquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    },
+                    "id": 136,
+                    "name": "Scottish Affairs Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/scottish-affairs-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1979-05-03T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 134,
+                            "committeeId": 136,
+                            "name": "Scottish Affairs Committee",
+                            "startDate": "1979-05-03T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9422,
+                    "title": "Connectivity in Scotland: Digital connectivity",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-11-14T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "scotaffcom@parliament.uk",
+                        "phone": "020 7219 1810 (general enquiries) | 020 7219 0731 (media inquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [],
+                    "oralEvidences": [],
+                    "id": 36256,
+                    "name": null,
+                    "startDate": "2026-03-25T09:00:00",
+                    "endDate": "2026-03-25T09:30:00",
+                    "eventId": 26581,
+                    "isPrivate": true,
+                    "activityType": "Private discussion",
+                    "attendees": []
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9422,
+                            "title": "Connectivity in Scotland: Digital connectivity",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-11-14T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "scotaffcom@parliament.uk",
+                                "phone": "020 7219 1810 (general enquiries) | 020 7219 0731 (media inquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36257,
+                    "name": null,
+                    "startDate": "2026-03-25T09:30:00",
+                    "endDate": "2026-03-25T11:30:00",
+                    "eventId": 26581,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "VodafoneThree",
+                                    "role": "Head of Government Affairs",
+                                    "idmsId": null,
+                                    "cisId": 106493
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34565,
+                            "personId": 118248,
+                            "name": "George Robinson",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "TalkTalk",
+                                    "role": "Chief Operating Officer",
+                                    "idmsId": null,
+                                    "cisId": 90666
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34694,
+                            "personId": 118466,
+                            "name": "Neil Smith",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Sky",
+                                    "role": "Director of Policy and Public Affairs",
+                                    "idmsId": "https://id.parliament.uk/ZhzUEL6O",
+                                    "cisId": 74871
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34695,
+                            "personId": 118467,
+                            "name": "Emily Davidson",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9422,
+                            "title": "Connectivity in Scotland: Digital connectivity",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-11-14T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "scotaffcom@parliament.uk",
+                                "phone": "020 7219 1810 (general enquiries) | 020 7219 0731 (media inquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36828,
+                    "name": null,
+                    "startDate": "2026-03-25T10:30:00",
+                    "endDate": "2026-03-25T11:30:00",
+                    "eventId": 26581,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Digital Connectivity Forum",
+                                    "role": "Head",
+                                    "idmsId": null,
+                                    "cisId": 96990
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34696,
+                            "personId": 67203,
+                            "name": "Alex Mather",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26818,
+            "name": null,
+            "startDate": "2026-03-25T09:45:00",
+            "endDate": "2026-03-25T11:15:00",
+            "cancelledDate": null,
+            "locationId": 2,
+            "location": "The Wilson Room, Portcullis House",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "justicecom@parliament.uk",
+                        "phone": "0207 219 3939 (general enquiries)",
+                        "address": "House of Commons, London SW1A 0AA",
+                        "contactDisclaimer": null
+                    },
+                    "id": 102,
+                    "name": "Justice Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/justice-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "2007-11-06T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 100,
+                            "committeeId": 102,
+                            "name": "Justice Committee",
+                            "startDate": "2007-11-06T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9669,
+                    "title": "Pre-appointment hearing: Chair of the Legal Services Board",
+                    "type": {
+                        "id": 5,
+                        "name": "Pre-appointment hearing",
+                        "isInquiry": false,
+                        "description": "People nominated to certain public offices may be examined by a committee to assess their suitability and plans for the role."
+                    },
+                    "openDate": "2026-03-09T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "justicecom@parliament.uk",
+                        "phone": "0207 219 3939 (general enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [],
+                    "oralEvidences": [],
+                    "id": 36623,
+                    "name": null,
+                    "startDate": "2026-03-25T09:45:00",
+                    "endDate": "2026-03-25T10:00:00",
+                    "eventId": 26818,
+                    "isPrivate": true,
+                    "activityType": "Private discussion",
+                    "attendees": []
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9669,
+                            "title": "Pre-appointment hearing: Chair of the Legal Services Board",
+                            "type": {
+                                "id": 5,
+                                "name": "Pre-appointment hearing",
+                                "isInquiry": false,
+                                "description": "People nominated to certain public offices may be examined by a committee to assess their suitability and plans for the role."
+                            },
+                            "openDate": "2026-03-09T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "justicecom@parliament.uk",
+                                "phone": "0207 219 3939 (general enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36624,
+                    "name": null,
+                    "startDate": "2026-03-25T10:00:00",
+                    "endDate": "2026-03-25T11:15:00",
+                    "eventId": 26818,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "The Legal Services Board (LSB)",
+                                    "role": "Government's preferred candidate for Chair",
+                                    "idmsId": null,
+                                    "cisId": 100965
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34297,
+                            "personId": 117597,
+                            "name": "Monisha Shah",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26839,
+            "name": null,
+            "startDate": "2026-03-25T09:00:00",
+            "endDate": "2026-03-25T12:00:00",
+            "cancelledDate": null,
+            "locationId": 10,
+            "location": "The Grimond Room, Portcullis House",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "northircom@parliament.uk",
+                        "phone": "020 7219 3672 (general enquiries) | \t020 7219 1679 (media enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    },
+                    "id": 120,
+                    "name": "Northern Ireland Affairs Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/northern-ireland-affairs-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1994-11-16T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 118,
+                            "committeeId": 120,
+                            "name": "Northern Ireland Affairs Committee",
+                            "startDate": "1994-11-16T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9358,
+                    "title": "Policing and security in Northern Ireland",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-09-24T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "northircom@parliament.uk",
+                        "phone": "020 7219 3672 (general enquiries) | \t020 7219 1679 (media enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9358,
+                            "title": "Policing and security in Northern Ireland",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-09-24T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "northircom@parliament.uk",
+                                "phone": "020 7219 3672 (general enquiries) | \t020 7219 1679 (media enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36682,
+                    "name": null,
+                    "startDate": "2026-03-25T09:30:00",
+                    "endDate": "2026-03-25T12:00:00",
+                    "eventId": 26839,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Police Service of Northern Ireland",
+                                    "role": "Chief Constable",
+                                    "idmsId": "https://id.parliament.uk/9fK3Npr7",
+                                    "cisId": 65902
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34346,
+                            "personId": 9662,
+                            "name": "Jon Boutcher QPM",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "Police Service of Northern Ireland",
+                                    "role": "Assistant Chief Constable",
+                                    "idmsId": "https://id.parliament.uk/9fK3Npr7",
+                                    "cisId": 65902
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34349,
+                            "personId": 117687,
+                            "name": "Davy Beck",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26897,
+            "name": "Financial Inclusion Strategy",
+            "startDate": "2026-03-25T14:00:00",
+            "endDate": "2026-03-25T16:30:00",
+            "cancelledDate": null,
+            "locationId": 10,
+            "location": "The Grimond Room, Portcullis House",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "treascom@parliament.uk",
+                        "phone": "020 7219 5769 (general enquiries)",
+                        "address": null,
+                        "contactDisclaimer": "We receive a significant number of emails each day. If you\u2019ve asked for a reply, we\u2019ll aim to respond as soon as we can, although during parliamentary recesses it may take slightly longer for us to respond. We\u2019re usually able to reply more quickly to emails than to post. Please note, the Committee does not look at individual cases or specific complaints."
+                    },
+                    "id": 158,
+                    "name": "Treasury Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/treasury-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1995-11-15T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 156,
+                            "committeeId": 158,
+                            "name": "Treasury Committee",
+                            "startDate": "1995-11-15T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9471,
+                    "title": "Financial Inclusion Strategy",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-11-28T00:00:00",
+                    "closeDate": "2026-04-30T00:00:00",
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "treascom@parliament.uk",
+                        "phone": "020 7219 5769 (general enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9471,
+                            "title": "Financial Inclusion Strategy",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-11-28T00:00:00",
+                            "closeDate": "2026-04-30T00:00:00",
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "treascom@parliament.uk",
+                                "phone": "020 7219 5769 (general enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36752,
+                    "name": "Private meeting",
+                    "startDate": "2026-03-25T14:00:00",
+                    "endDate": "2026-03-25T14:15:00",
+                    "eventId": 26897,
+                    "isPrivate": true,
+                    "activityType": "Private discussion",
+                    "attendees": []
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9471,
+                            "title": "Financial Inclusion Strategy",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-11-28T00:00:00",
+                            "closeDate": "2026-04-30T00:00:00",
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "treascom@parliament.uk",
+                                "phone": "020 7219 5769 (general enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36754,
+                    "name": "Oral evidence",
+                    "startDate": "2026-03-25T14:15:00",
+                    "endDate": "2026-03-25T16:30:00",
+                    "eventId": 26897,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Money and Mental Health Policy Institute",
+                                    "role": "CEO",
+                                    "idmsId": "https://id.parliament.uk/JZnLZANh",
+                                    "cisId": 56599
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34472,
+                            "personId": 118143,
+                            "name": "Helen Undy",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "The Money Charity",
+                                    "role": "CEO",
+                                    "idmsId": null,
+                                    "cisId": 8636
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34473,
+                            "personId": 118144,
+                            "name": "Michelle Highman",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Good Things Foundation",
+                                    "role": "Director",
+                                    "idmsId": null,
+                                    "cisId": 163
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34497,
+                            "personId": 54301,
+                            "name": "Dr Emma Stone",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 4,
+                            "organisations": [
+                                {
+                                    "name": "Fair4All Finance",
+                                    "role": "CEO",
+                                    "idmsId": "https://id.parliament.uk/H2LVkXFL",
+                                    "cisId": 36253
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34556,
+                            "personId": 118220,
+                            "name": "Kate Pender",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26906,
+            "name": "Oral Evidence",
+            "startDate": "2026-03-25T09:15:00",
+            "endDate": "2026-03-25T11:40:00",
+            "cancelledDate": null,
+            "locationId": 12,
+            "location": "Room 16, Palace of Westminster",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "hsccom@parliament.uk",
+                        "phone": "(general enquiries) 020 7219 6182",
+                        "address": "Health and Social Care Committee, House of Commons, London, SW1A 0AA",
+                        "contactDisclaimer": "We can't usually help you with an individual problem or a specific complaint."
+                    },
+                    "id": 81,
+                    "name": "Health and Social Care Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/health-and-social-care-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1991-10-31T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 80,
+                            "committeeId": 81,
+                            "name": "Health and Social Care Committee",
+                            "startDate": "1991-10-31T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9239,
+                    "title": "Food and Weight Management",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-07-17T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "hsccom@parliament.uk",
+                        "phone": "(general enquiries) 020 7219 6182",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9239,
+                            "title": "Food and Weight Management",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-07-17T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "hsccom@parliament.uk",
+                                "phone": "(general enquiries) 020 7219 6182",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36772,
+                    "name": "Private Discussion",
+                    "startDate": "2026-03-25T09:15:00",
+                    "endDate": "2026-03-25T09:30:00",
+                    "eventId": 26906,
+                    "isPrivate": true,
+                    "activityType": "Private discussion",
+                    "attendees": []
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9239,
+                            "title": "Food and Weight Management",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-07-17T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "hsccom@parliament.uk",
+                                "phone": "(general enquiries) 020 7219 6182",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36774,
+                    "name": "Oral Evidence",
+                    "startDate": "2026-03-25T09:30:00",
+                    "endDate": "2026-03-25T10:30:00",
+                    "eventId": 26906,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "Boots UK",
+                                    "role": "Superintendent Pharmacist",
+                                    "idmsId": null,
+                                    "cisId": 8104
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34570,
+                            "personId": 118255,
+                            "name": "Claire Nevinson",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Pharmacy2U",
+                                    "role": "Chief Medical Officer",
+                                    "idmsId": null,
+                                    "cisId": 1900
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34571,
+                            "personId": 118257,
+                            "name": "Dr Kieran Seyan",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 4,
+                            "organisations": [
+                                {
+                                    "name": "Coalition of Responsible Digital Health",
+                                    "role": "Public Policy and Partnerships Lead at Eucalyptus (Juniper)",
+                                    "idmsId": null,
+                                    "cisId": 111780
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34648,
+                            "personId": 104946,
+                            "name": "Dr Simon Doyle",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9239,
+                            "title": "Food and Weight Management",
+                            "type": {
+                                "id": 1,
+                                "name": "Inquiry",
+                                "isInquiry": true,
+                                "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                            },
+                            "openDate": "2025-07-17T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "hsccom@parliament.uk",
+                                "phone": "(general enquiries) 020 7219 6182",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36775,
+                    "name": "Oral Evidence",
+                    "startDate": "2026-03-25T10:30:00",
+                    "endDate": "2026-03-25T11:30:00",
+                    "eventId": 26906,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "General Pharmaceutical Council (GPhC)",
+                                    "role": "Lead Clinical Advisor",
+                                    "idmsId": null,
+                                    "cisId": 111718
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34572,
+                            "personId": 118258,
+                            "name": "Neha Ramaiya",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "National Institute for Health and Care Excellence (NICE)",
+                                    "role": "Programme Director for Commercial, Managed Access and Medicines Policy",
+                                    "idmsId": null,
+                                    "cisId": 94507
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34573,
+                            "personId": 118259,
+                            "name": "John Spoors",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Medicines and Healthcare products Regulatory Agency (MHRA)",
+                                    "role": "Deputy Director of Criminal Enforcement & Head of the Criminal Enforcement Unit",
+                                    "idmsId": null,
+                                    "cisId": 7244
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34604,
+                            "personId": 98564,
+                            "name": "Andy Morling",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26925,
+            "name": "Oral evidence",
+            "startDate": "2026-03-25T14:30:00",
+            "endDate": "2026-03-25T17:30:00",
+            "cancelledDate": null,
+            "locationId": 3,
+            "location": "The Thatcher Room, Portcullis House",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "commonsesnz@parliament.uk",
+                        "phone": "Media: Email: bridgespalmerj@parliament.uk",
+                        "address": "Energy Security and Net Zero Committee, House of Commons, London SW1A 0AA",
+                        "contactDisclaimer": null
+                    },
+                    "id": 664,
+                    "name": "Energy Security and Net Zero Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": null,
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "2024-10-21T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2024-10-21T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 719,
+                            "committeeId": 664,
+                            "name": "Energy Security and Net Zero Committee",
+                            "startDate": "2023-04-25T11:08:57",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9697,
+                    "title": "Energy resilience",
+                    "type": {
+                        "id": 2,
+                        "name": "Non-inquiry session",
+                        "isInquiry": false,
+                        "description": "Non-inquiry sessions are brief packages of work that will not necessarily result in a report. They may be used to revisit previous inquiry topics or take evidence on a topical matter."
+                    },
+                    "openDate": "2026-03-17T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "commonsesnz@parliament.uk",
+                        "phone": "Media: Email: bridgespalmerj@parliament.uk",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9697,
+                            "title": "Energy resilience",
+                            "type": {
+                                "id": 2,
+                                "name": "Non-inquiry session",
+                                "isInquiry": false,
+                                "description": "Non-inquiry sessions are brief packages of work that will not necessarily result in a report. They may be used to revisit previous inquiry topics or take evidence on a topical matter."
+                            },
+                            "openDate": "2026-03-17T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "commonsesnz@parliament.uk",
+                                "phone": "Media: Email: bridgespalmerj@parliament.uk",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36815,
+                    "name": "Oral evidence",
+                    "startDate": "2026-03-25T15:00:00",
+                    "endDate": "2026-03-25T15:45:00",
+                    "eventId": 26925,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "RenewableUK",
+                                    "role": "Executive Director \u2013 Policy & Engagement",
+                                    "idmsId": "https://id.parliament.uk/bwAuyexp",
+                                    "cisId": 69682
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34625,
+                            "personId": 75263,
+                            "name": "Ana Musat",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "RUSI",
+                                    "role": "Research Fellow, Energy Security",
+                                    "idmsId": null,
+                                    "cisId": 89591
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34626,
+                            "personId": 118346,
+                            "name": "Dan Marks",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "OEUK",
+                                    "role": "Chief Executive",
+                                    "idmsId": null,
+                                    "cisId": 92645
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34627,
+                            "personId": 115169,
+                            "name": "David Whitehouse",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9697,
+                            "title": "Energy resilience",
+                            "type": {
+                                "id": 2,
+                                "name": "Non-inquiry session",
+                                "isInquiry": false,
+                                "description": "Non-inquiry sessions are brief packages of work that will not necessarily result in a report. They may be used to revisit previous inquiry topics or take evidence on a topical matter."
+                            },
+                            "openDate": "2026-03-17T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "commonsesnz@parliament.uk",
+                                "phone": "Media: Email: bridgespalmerj@parliament.uk",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36847,
+                    "name": "Oral evidence",
+                    "startDate": "2026-03-25T15:45:00",
+                    "endDate": "2026-03-25T16:30:00",
+                    "eventId": 26925,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Equinor",
+                                    "role": "UK Country Manager",
+                                    "idmsId": "https://id.parliament.uk/AR1xBfKu",
+                                    "cisId": 34383
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34628,
+                            "personId": 118347,
+                            "name": "Alex Grant",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "Petrol Retailers Association",
+                                    "role": "Executive Director",
+                                    "idmsId": null,
+                                    "cisId": 111751
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34629,
+                            "personId": 74302,
+                            "name": "Gordon Balmer",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 3,
+                            "organisations": [
+                                {
+                                    "name": "Wood Mackenzie",
+                                    "role": "Senior Vice President of Refining, Chemicals and Oil Markets",
+                                    "idmsId": "https://id.parliament.uk/vTqSbjek",
+                                    "cisId": 86687
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34630,
+                            "personId": 118348,
+                            "name": "Alan Gelder",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 4,
+                            "organisations": [
+                                {
+                                    "name": "Fuels Industry UK",
+                                    "role": "CEO",
+                                    "idmsId": null,
+                                    "cisId": 100662
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34641,
+                            "personId": 15863,
+                            "name": "Elizabeth de Jong",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                },
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9697,
+                            "title": "Energy resilience",
+                            "type": {
+                                "id": 2,
+                                "name": "Non-inquiry session",
+                                "isInquiry": false,
+                                "description": "Non-inquiry sessions are brief packages of work that will not necessarily result in a report. They may be used to revisit previous inquiry topics or take evidence on a topical matter."
+                            },
+                            "openDate": "2026-03-17T00:00:00",
+                            "closeDate": null,
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "commonsesnz@parliament.uk",
+                                "phone": "Media: Email: bridgespalmerj@parliament.uk",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36849,
+                    "name": "Oral evidence",
+                    "startDate": "2026-03-25T16:30:00",
+                    "endDate": "2026-03-25T17:15:00",
+                    "eventId": 26925,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [
+                                {
+                                    "name": "Department for Energy Security and Net Zero",
+                                    "role": "Minister for Energy",
+                                    "idmsId": null,
+                                    "cisId": 96648
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34631,
+                            "personId": 92215,
+                            "name": "Michael Shanks MP",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        },
+                        {
+                            "displayOrder": 2,
+                            "organisations": [
+                                {
+                                    "name": "Department for Energy Security and Net Zero",
+                                    "role": "Director General for Energy Markets and Supply",
+                                    "idmsId": null,
+                                    "cisId": 96648
+                                }
+                            ],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34651,
+                            "personId": 118142,
+                            "name": "Jonathan Mills CB",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 26966,
+            "name": "Oral Evidence Session",
+            "startDate": "2026-03-25T09:30:00",
+            "endDate": "2026-03-25T12:00:00",
+            "cancelledDate": null,
+            "locationId": 3,
+            "location": "The Thatcher Room, Portcullis House",
+            "eventType": {
+                "id": 6,
+                "name": "Formal meeting (oral evidence session)",
+                "isVisit": false,
+                "description": "Formal meetings may be held in private (for example to consider a draft report) or in public (for example to hear oral evidence), and require a minimum number of members to be present."
+            },
+            "eventSource": "CIS",
+            "committees": [
+                {
+                    "contact": {
+                        "email": "defcom@parliament.uk",
+                        "phone": "020 7219 3113 (general enquiries) | 020 7219 2996 (media enquiries)",
+                        "address": "Defence Committee, House of Commons, London SW1A 0AA",
+                        "contactDisclaimer": null
+                    },
+                    "id": 24,
+                    "name": "Defence Committee",
+                    "parentCommittee": null,
+                    "subCommittees": [],
+                    "house": "Commons",
+                    "leadHouse": null,
+                    "category": {
+                        "id": 1,
+                        "name": "Select"
+                    },
+                    "committeeTypes": [
+                        {
+                            "id": 1,
+                            "name": "(HC) Public Standing Orders - Departmental",
+                            "committeeCategory": {
+                                "id": 1,
+                                "name": "Select"
+                            }
+                        }
+                    ],
+                    "showOnWebsite": true,
+                    "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/defence-committee/",
+                    "websiteLegacyRedirectEnabled": false,
+                    "startDate": "1979-05-03T00:00:00",
+                    "endDate": null,
+                    "dateCommonsAppointed": "2020-03-02T00:00:00",
+                    "dateLordsAppointed": null,
+                    "scrutinisingDepartments": [],
+                    "isLeadCommittee": true,
+                    "nameHistory": [
+                        {
+                            "id": 24,
+                            "committeeId": 24,
+                            "name": "Defence Committee",
+                            "startDate": "1979-05-03T00:00:00",
+                            "endDate": null
+                        }
+                    ]
+                }
+            ],
+            "committeeBusinesses": [
+                {
+                    "id": 9704,
+                    "title": "Pre-appointment hearing for the Armed Forces Commissioner",
+                    "type": {
+                        "id": 5,
+                        "name": "Pre-appointment hearing",
+                        "isInquiry": false,
+                        "description": "People nominated to certain public offices may be examined by a committee to assess their suitability and plans for the role."
+                    },
+                    "openDate": "2026-03-18T00:00:00",
+                    "closeDate": "2026-04-15T00:00:00",
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "defcom@parliament.uk",
+                        "phone": "020 7219 3113 (general enquiries) | 020 7219 2996 (media enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "childEvents": null,
+            "nextActivity": null,
+            "activities": [
+                {
+                    "committeeBusinesses": [
+                        {
+                            "id": 9704,
+                            "title": "Pre-appointment hearing for the Armed Forces Commissioner",
+                            "type": {
+                                "id": 5,
+                                "name": "Pre-appointment hearing",
+                                "isInquiry": false,
+                                "description": "People nominated to certain public offices may be examined by a committee to assess their suitability and plans for the role."
+                            },
+                            "openDate": "2026-03-18T00:00:00",
+                            "closeDate": "2026-04-15T00:00:00",
+                            "latestReport": null,
+                            "openSubmissionPeriods": [],
+                            "closedSubmissionPeriods": [],
+                            "nextOralEvidenceSession": null,
+                            "contact": {
+                                "email": "defcom@parliament.uk",
+                                "phone": "020 7219 3113 (general enquiries) | 020 7219 2996 (media enquiries)",
+                                "address": null,
+                                "contactDisclaimer": null
+                            }
+                        }
+                    ],
+                    "oralEvidences": [],
+                    "id": 36865,
+                    "name": "Panel 1",
+                    "startDate": "2026-03-25T09:45:00",
+                    "endDate": "2026-03-25T11:30:00",
+                    "eventId": 26966,
+                    "isPrivate": false,
+                    "activityType": "Oral evidence",
+                    "attendees": [
+                        {
+                            "displayOrder": 1,
+                            "organisations": [],
+                            "submitterType": 0,
+                            "additionalContext": null,
+                            "id": 34685,
+                            "personId": 118458,
+                            "name": "Polly Miller-Perkins CBE",
+                            "photoUrl": null,
+                            "memberInfo": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "publications": [],
+    "news": [
+        {
+            "heading": "Business and Trade Committee Chair responds to Ming Yang investment block",
+            "teaser": "Rt Hon Liam Byrne MP, Chair of the Business and Trade Committee responds to reports that the Government has decided to block Chinese company Ming Yang\u2019s plans to build a factory in Scotland on national security grounds.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-25T18:08:25+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/0bf27c2570c549689ba5b6c252ac9c8b/btc-liam-byrne.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/0bf27c2570c549689ba5b6c252ac9c8b/btc-liam-byrne.jpeg?width=300&height=300&mode=crop",
+            "url": "/external/committees/news/2026/march/btc-china-wind-turbines-quote/",
+            "id": 212857,
+            "source_committee_id": 365
+        },
+        {
+            "heading": "Appointment of new BBC Director-General: Comment from CMS Committee Chair Dame Caroline Dinenage MP",
+            "teaser": "Chair of the CMS Committee, Dame Caroline Dinenage MP comments on the appointment of Matt Brittin as Director-General of the BBC",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-25T13:39:21+00:00",
+            "imageUrl": "https://www.parliament.uk/globalassets/house-of-lords/news-story-images/bbccadobe.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/globalassets/house-of-lords/news-story-images/bbccadobe.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/378/culture-media-and-sport-committee/news/212854/appointment-of-new-bbc-directorgeneral-comment-from-cms-committee-chair-dame-caroline-dinenage-mp/",
+            "id": 212854,
+            "source_committee_id": 378
+        }
+    ]
+}
