@@ -1,0 +1,328 @@
+{
+    "metadata": {
+        "extracted_at": "2026-03-28T08:00:34.949823+00:00",
+        "range": [
+            "2026-03-27T08:00:00+00:00",
+            "2026-03-28T08:00:00+00:00"
+        ]
+    },
+    "events": [],
+    "publications": [
+        {
+            "businesses": [
+                {
+                    "id": 9669,
+                    "title": "Pre-appointment hearing: Chair of the Legal Services Board",
+                    "type": {
+                        "id": 5,
+                        "name": "Pre-appointment hearing",
+                        "isInquiry": false,
+                        "description": "People nominated to certain public offices may be examined by a committee to assess their suitability and plans for the role."
+                    },
+                    "openDate": "2026-03-09T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "justicecom@parliament.uk",
+                        "phone": "0207 219 3939 (general enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "committee": {
+                "contact": {
+                    "email": "justicecom@parliament.uk",
+                    "phone": "0207 219 3939 (general enquiries)",
+                    "address": "House of Commons, London SW1A 0AA",
+                    "contactDisclaimer": null
+                },
+                "id": 102,
+                "name": "Justice Committee",
+                "parentCommittee": null,
+                "subCommittees": [],
+                "house": "Commons",
+                "leadHouse": null,
+                "category": {
+                    "id": 1,
+                    "name": "Select"
+                },
+                "committeeTypes": [
+                    {
+                        "id": 1,
+                        "name": "(HC) Public Standing Orders - Departmental",
+                        "committeeCategory": {
+                            "id": 1,
+                            "name": "Select"
+                        }
+                    }
+                ],
+                "showOnWebsite": true,
+                "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/justice-committee/",
+                "websiteLegacyRedirectEnabled": false,
+                "startDate": "2007-11-06T00:00:00",
+                "endDate": null,
+                "dateCommonsAppointed": "2020-03-02T00:00:00",
+                "dateLordsAppointed": null,
+                "scrutinisingDepartments": [],
+                "isLeadCommittee": null,
+                "nameHistory": [
+                    {
+                        "id": 100,
+                        "committeeId": 102,
+                        "name": "Justice Committee",
+                        "startDate": "2007-11-06T00:00:00",
+                        "endDate": null
+                    }
+                ]
+            },
+            "description": "9th Report - Appointment of Monisha Shah as Chair of the Legal Services Board",
+            "id": 52411,
+            "publicationStartDate": "2026-03-27T12:00:00",
+            "governmentResponses": {
+                "publication": [],
+                "responseDeadline": "2026-05-27T00:00:00",
+                "responseExcepted": true
+            },
+            "publicationEndDate": null,
+            "documents": [
+                {
+                    "documentId": 290858,
+                    "files": [
+                        {
+                            "fileName": "HC 1771 - Appointment of Chair of the Legal Services Board-online.pdf",
+                            "fileSize": 338082,
+                            "fileDataFormat": "OriginalFormat",
+                            "url": null
+                        }
+                    ]
+                }
+            ],
+            "hcNumber": {
+                "number": "HC 1771",
+                "sessionId": 39,
+                "sessionDescription": "2024-26"
+            },
+            "hlPaper": null,
+            "type": {
+                "id": 1,
+                "name": "Report",
+                "description": "Reports are agreed formally by a committee and published by order of the House. They are often the product of a committee inquiry.",
+                "governmentCanRespond": true,
+                "canBeResponse": false,
+                "iconKey": null,
+                "pluralVersion": "Reports"
+            },
+            "responseToPublicationId": null,
+            "additionalContentUrl": "https://publications.parliament.uk/pa/cm5901/cmselect/cmjust/1771/report.html",
+            "additionalContentUrl2": null,
+            "respondingDepartment": null
+        },
+        {
+            "businesses": [
+                {
+                    "id": 9704,
+                    "title": "Pre-appointment hearing for the Armed Forces Commissioner",
+                    "type": {
+                        "id": 5,
+                        "name": "Pre-appointment hearing",
+                        "isInquiry": false,
+                        "description": "People nominated to certain public offices may be examined by a committee to assess their suitability and plans for the role."
+                    },
+                    "openDate": "2026-03-18T00:00:00",
+                    "closeDate": "2026-04-15T00:00:00",
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [
+                        {
+                            "id": 3896,
+                            "startDate": "2026-03-27T09:00:00",
+                            "endDate": "2026-03-27T09:01:00",
+                            "submissionType": "WrittenEvidence",
+                            "isPromoted": true,
+                            "statusMessage": "<p>The deadline for submissions was <strong>Friday 27 March 2026</strong>.</p>",
+                            "allowSubmissionsPastEndDate": false
+                        }
+                    ],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "defcom@parliament.uk",
+                        "phone": "020 7219 3113 (general enquiries) | 020 7219 2996 (media enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "committee": {
+                "contact": {
+                    "email": "defcom@parliament.uk",
+                    "phone": "020 7219 3113 (general enquiries) | 020 7219 2996 (media enquiries)",
+                    "address": "Defence Committee, House of Commons, London SW1A 0AA",
+                    "contactDisclaimer": null
+                },
+                "id": 24,
+                "name": "Defence Committee",
+                "parentCommittee": null,
+                "subCommittees": [],
+                "house": "Commons",
+                "leadHouse": null,
+                "category": {
+                    "id": 1,
+                    "name": "Select"
+                },
+                "committeeTypes": [
+                    {
+                        "id": 1,
+                        "name": "(HC) Public Standing Orders - Departmental",
+                        "committeeCategory": {
+                            "id": 1,
+                            "name": "Select"
+                        }
+                    }
+                ],
+                "showOnWebsite": true,
+                "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/defence-committee/",
+                "websiteLegacyRedirectEnabled": false,
+                "startDate": "1979-05-03T00:00:00",
+                "endDate": null,
+                "dateCommonsAppointed": "2020-03-02T00:00:00",
+                "dateLordsAppointed": null,
+                "scrutinisingDepartments": [],
+                "isLeadCommittee": null,
+                "nameHistory": [
+                    {
+                        "id": 24,
+                        "committeeId": 24,
+                        "name": "Defence Committee",
+                        "startDate": "1979-05-03T00:00:00",
+                        "endDate": null
+                    }
+                ]
+            },
+            "description": "7th Report - Pre-Appointment Hearing: Armed Forces Commissioner",
+            "id": 52398,
+            "publicationStartDate": "2026-03-27T09:00:00",
+            "governmentResponses": {
+                "publication": [],
+                "responseDeadline": "2026-05-27T00:00:00",
+                "responseExcepted": true
+            },
+            "publicationEndDate": null,
+            "documents": [
+                {
+                    "documentId": 290822,
+                    "files": [
+                        {
+                            "fileName": "HC 1428 - Pre-appointment-Armed Forces Commissioner-online.pdf",
+                            "fileSize": 250765,
+                            "fileDataFormat": "OriginalFormat",
+                            "url": null
+                        }
+                    ]
+                }
+            ],
+            "hcNumber": {
+                "number": "HC 1428",
+                "sessionId": 39,
+                "sessionDescription": "2024-26"
+            },
+            "hlPaper": null,
+            "type": {
+                "id": 1,
+                "name": "Report",
+                "description": "Reports are agreed formally by a committee and published by order of the House. They are often the product of a committee inquiry.",
+                "governmentCanRespond": true,
+                "canBeResponse": false,
+                "iconKey": null,
+                "pluralVersion": "Reports"
+            },
+            "responseToPublicationId": null,
+            "additionalContentUrl": "https://publications.parliament.uk/pa/cm5901/cmselect/cmdfence/1428/report.html",
+            "additionalContentUrl2": null,
+            "respondingDepartment": null
+        }
+    ],
+    "news": [
+        {
+            "heading": "Committee presses government and UKRI for urgent clarification on science research funding cuts  ",
+            "teaser": "The Science, Innovation and Technology Committee Chair, Dame Chi Onwurah, has written to the Science Minister, Lord Patrick Vallance, and UKRI Chief Executive, Professor Sir Ian Chapman, seeking further detail on planned cuts to scientific research funding.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-27T11:21:32+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/94a3a2a17a7d447c9a57e20cec39afb3/chi-onwurah-mp.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/94a3a2a17a7d447c9a57e20cec39afb3/chi-onwurah-mp.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/135/science-innovation-and-technology-committee/news/212899/committee-presses-government-and-ukri-for-urgent-clarification-on-science-research-funding-cuts/",
+            "id": 212899,
+            "source_committee_id": 135
+        },
+        {
+            "heading": "Defence Committee endorses interim appointment of Polly Miller-Perkins as Armed Forces Commissioner",
+            "teaser": "Defence Committee endorses interim appointment of Polly Miller-Perkins as Armed Forces Commissioner",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-27T08:59:39+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/48b7d624d8bc4f4b8ea81a8583ba714e/committee-room-ns.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/48b7d624d8bc4f4b8ea81a8583ba714e/committee-room-ns.jpg?width=300&height=300&mode=crop",
+            "url": "/external/committees/news/2026/march/def_defence_committee_endorses_interim_appointment_of_polly_miller_perkins_as_armed_forces_commissioner/",
+            "id": 212891,
+            "source_committee_id": 24
+        },
+        {
+            "heading": "Transport Committee Chair leads accessibility debate",
+            "teaser": "Ruth Cadbury MP, chair of Parliament\u2019s Transport Committee, has used a Commons debate to call for further action",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-27T11:27:42+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/86e1047a88d84eba878e60a18ad4ccc6/ruth-cadbury-landscape.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/86e1047a88d84eba878e60a18ad4ccc6/ruth-cadbury-landscape.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/153/transport-committee/news/212901/transport-committee-chair-leads-accessibility-debate/",
+            "id": 212901,
+            "source_committee_id": 153
+        },
+        {
+            "heading": "Nearly half a million Lloyds Banking Group customers affected by personal data glitch",
+            "teaser": "Up to 447,936 Lloyds, Halifax and Bank of Scotland customers saw other people's transactions or had",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-27T08:00:00+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/26390fbf4fc54cf98bad847f0b9d6da2/adobestock_524304982_editorial_use_only.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/26390fbf4fc54cf98bad847f0b9d6da2/adobestock_524304982_editorial_use_only.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/158/treasury-committee/news/212885/nearly-half-a-million-lloyds-banking-group-customers-affected-by-personal-data-glitch/",
+            "id": 212885,
+            "source_committee_id": 158
+        },
+        {
+            "heading": "Appointment of Chair of the Legal Services Board",
+            "teaser": "The Justice Committee has published its report following the\u00a0pre-appointment hearing\u00a0on Wednesday, 25 March",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-27T14:51:42+00:00",
+            "imageUrl": "https://www.parliament.uk/globalassets/house-of-commons/230816_elspeth-keep_portcullis-house_wilson-room_cos02476.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/globalassets/house-of-commons/230816_elspeth-keep_portcullis-house_wilson-room_cos02476.jpg?width=300&height=300&mode=crop",
+            "url": "/external/committees/news/2026/march/jus_appointment_of_legal_services_board/",
+            "id": 212902,
+            "source_committee_id": 102
+        },
+        {
+            "heading": "Arts Council England review: CMS Committee Chair comments on Government response ahead of evidence session with ACE",
+            "teaser": "Commenting on the publication of the Government and Arts Council England responses to Baroness Hodge\u2019s review of ACE",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-27T11:16:31+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/f0c1e1b3eadb46f4b5a3e5b2b74d8ee7/caroline-dinenage.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/f0c1e1b3eadb46f4b5a3e5b2b74d8ee7/caroline-dinenage.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/378/culture-media-and-sport-committee/news/212900/arts-council-england-review-cms-committee-chair-comments-on-government-response-ahead-of-evidence-session-with-ace/",
+            "id": 212900,
+            "source_committee_id": 378
+        }
+    ]
+}
