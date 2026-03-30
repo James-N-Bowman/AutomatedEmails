@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "extracted_at": "2026-03-30T08:00:37.026545+01:00",
+        "range": [
+            "2026-03-29T08:00:00+01:00",
+            "2026-03-30T08:00:00+01:00"
+        ]
+    },
+    "events": [],
+    "publications": [],
+    "news": [
+        {
+            "heading": "Dyfodol CEF Y Parc: ASau yn galw ar Lywodraeth y DU i oedi ehangu",
+            "teaser": "Dylid oedi\u2019r ehangu sydd yn yr arfaeth ar gyfer CEF Y Parc tra bod y Llywodraeth yn ailystyried a ellir ei gyflawni heb beryglu diogelwch carcharorion a staff, meddai ASau.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-29T23:05:01+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/295a9795980e40c789efd95a8356e19e/larry-farr-s21qe4s1vwu-unsplash.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/295a9795980e40c789efd95a8356e19e/larry-farr-s21qe4s1vwu-unsplash.jpg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/162/welsh-affairs-committee/news/212908/dyfodol-cef-y-parc-asau-yn-galw-ar-lywodraeth-y-du-i-oedi-ehangu/",
+            "id": 212908,
+            "source_committee_id": 162
+        },
+        {
+            "heading": "The Future of HMP Parc: MPs call for UK Government to pause expansion",
+            "teaser": "The planned expansion of HMP Parc should be paused while the Government reconsiders whether it can be achieved without jeopardising the safety of prisoners and staff, MPs say.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-29T23:01:00+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/e7cabecc1e4a4d488b3546bcc1d1a192/larry-farr-s21qe4s1vwu-unsplash.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/e7cabecc1e4a4d488b3546bcc1d1a192/larry-farr-s21qe4s1vwu-unsplash.jpg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/162/welsh-affairs-committee/news/212903/the-future-of-hmp-parc-mps-call-for-uk-government-to-pause-expansion/",
+            "id": 212903,
+            "source_committee_id": 162
+        }
+    ]
+}
