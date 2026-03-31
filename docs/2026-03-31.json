@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "extracted_at": "2026-03-31T08:00:37.869701+01:00",
+        "range": [
+            "2026-03-30T08:00:00+01:00",
+            "2026-03-31T08:00:00+01:00"
+        ]
+    },
+    "events": [],
+    "publications": [],
+    "news": [
+        {
+            "heading": "Justice Committee to hold evidence session with the LSB and SRA",
+            "teaser": "As part of its access to justice inquiry, the Justice Committee will take evidence from the Legal Services Board and Solicitors Regulation Authority",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-30T13:26:30+00:00",
+            "imageUrl": "https://www.parliament.uk/globalassets/house-of-commons/230816_elspeth-keep_portcullis-house_wilson-room_cos02476.jpg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/globalassets/house-of-commons/230816_elspeth-keep_portcullis-house_wilson-room_cos02476.jpg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/102/justice-committee/news/212931/justice-committee-to-hold-evidence-session-with-the-lsb-and-sra/",
+            "id": 212931,
+            "source_committee_id": 102
+        }
+    ]
+}
