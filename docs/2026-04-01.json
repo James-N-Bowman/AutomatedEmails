@@ -1,0 +1,150 @@
+{
+    "metadata": {
+        "extracted_at": "2026-04-01T08:00:38.217565+01:00",
+        "range": [
+            "2026-03-31T08:00:00+01:00",
+            "2026-04-01T08:00:00+01:00"
+        ]
+    },
+    "events": [],
+    "publications": [
+        {
+            "businesses": [
+                {
+                    "id": 9126,
+                    "title": "Combatting New Forms of Extremism",
+                    "type": {
+                        "id": 1,
+                        "name": "Inquiry",
+                        "isInquiry": true,
+                        "description": "Inquiries allow committees to consider oral and written evidence on a particular topic. They usually result in the publication of a report."
+                    },
+                    "openDate": "2025-05-14T00:00:00",
+                    "closeDate": null,
+                    "latestReport": null,
+                    "openSubmissionPeriods": [],
+                    "closedSubmissionPeriods": [
+                        {
+                            "id": 3672,
+                            "startDate": "2025-05-14T09:00:00",
+                            "endDate": "2025-06-18T23:59:00",
+                            "submissionType": "WrittenEvidence",
+                            "isPromoted": true,
+                            "statusMessage": "<p>The deadline for submissions was <strong>Wednesday 18 June 2025</strong>.</p>",
+                            "allowSubmissionsPastEndDate": true
+                        }
+                    ],
+                    "nextOralEvidenceSession": null,
+                    "contact": {
+                        "email": "homeaffcom@parliament.uk",
+                        "phone": "020 7219 3440 (general) | 020 7219 8430 (media enquiries)",
+                        "address": null,
+                        "contactDisclaimer": null
+                    }
+                }
+            ],
+            "committee": {
+                "contact": {
+                    "email": "homeaffcom@parliament.uk",
+                    "phone": "020 7219 3440 (general) | 020 7219 8430 (media enquiries)",
+                    "address": null,
+                    "contactDisclaimer": null
+                },
+                "id": 83,
+                "name": "Home Affairs Committee",
+                "parentCommittee": null,
+                "subCommittees": [],
+                "house": "Commons",
+                "leadHouse": null,
+                "category": {
+                    "id": 1,
+                    "name": "Select"
+                },
+                "committeeTypes": [
+                    {
+                        "id": 1,
+                        "name": "(HC) Public Standing Orders - Departmental",
+                        "committeeCategory": {
+                            "id": 1,
+                            "name": "Select"
+                        }
+                    }
+                ],
+                "showOnWebsite": true,
+                "websiteLegacyUrl": "https://old.parliament.uk/business/committees/committees-a-z/commons-select/home-affairs-committee/",
+                "websiteLegacyRedirectEnabled": false,
+                "startDate": "1979-05-03T00:00:00",
+                "endDate": null,
+                "dateCommonsAppointed": "2024-10-21T00:00:00",
+                "dateLordsAppointed": null,
+                "scrutinisingDepartments": [],
+                "isLeadCommittee": null,
+                "nameHistory": [
+                    {
+                        "id": 82,
+                        "committeeId": 83,
+                        "name": "Home Affairs Committee",
+                        "startDate": "1979-05-03T00:00:00",
+                        "endDate": null
+                    }
+                ]
+            },
+            "description": "7th Report \u2013 Combatting new forms of extremism",
+            "id": 52458,
+            "publicationStartDate": "2026-04-01T00:01:00",
+            "governmentResponses": {
+                "publication": [],
+                "responseDeadline": "2026-06-01T00:00:00",
+                "responseExcepted": true
+            },
+            "publicationEndDate": null,
+            "documents": [
+                {
+                    "documentId": 291283,
+                    "files": [
+                        {
+                            "fileName": "HC 903 \u2013 Combatting new forms of extremism FINAL-online.pdf",
+                            "fileSize": 1068541,
+                            "fileDataFormat": "OriginalFormat",
+                            "url": null
+                        }
+                    ]
+                }
+            ],
+            "hcNumber": {
+                "number": "HC 903",
+                "sessionId": 39,
+                "sessionDescription": "2024-26"
+            },
+            "hlPaper": null,
+            "type": {
+                "id": 1,
+                "name": "Report",
+                "description": "Reports are agreed formally by a committee and published by order of the House. They are often the product of a committee inquiry.",
+                "governmentCanRespond": true,
+                "canBeResponse": false,
+                "iconKey": null,
+                "pluralVersion": "Reports"
+            },
+            "responseToPublicationId": null,
+            "additionalContentUrl": "https://publications.parliament.uk/pa/cm5901/cmselect/cmhaff/903/report.html",
+            "additionalContentUrl2": null,
+            "respondingDepartment": null
+        }
+    ],
+    "news": [
+        {
+            "heading": "Prevent referral mechanism unprepared to deal with reality of modern extremism \u2013 Home Affairs Committee warns",
+            "teaser": "A failure to move on from a counter-terror mindset has left the country ill-prepared to deal with new forms of extremism, a report by the Home Affairs Committee has warned.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-03-31T23:05:00+00:00",
+            "imageUrl": "https://www.parliament.uk/globalassets/house-of-commons/news-story-image-template-1.png",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/globalassets/house-of-commons/news-story-image-template-1.png?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/83/home-affairs-committee/news/212957/prevent-referral-mechanism-unprepared-to-deal-with-reality-of-modern-extremism-home-affairs-committee-warns/",
+            "id": 212957,
+            "source_committee_id": 83
+        }
+    ]
+}
