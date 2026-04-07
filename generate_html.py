@@ -168,6 +168,12 @@ def main():
         if c_pubs:
             committee_blocks.append(E.H2("Reports"))
             for item in c_pubs:
+                pub_url = item.get('additionalContentUrl')
+                if not pub_url:
+                    documents = item.get('documents', [])
+                    if not documents:
+                        continue
+                    pub_url = f"https://committees.parliament.uk/publications/{item.get('id')}/documents/{documents[0].get('documentId')}/default/"
                 committee_blocks.append(create_publication_element(
                     item.get('description'), 
                     item.get('additionalContentUrl'),
