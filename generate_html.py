@@ -99,7 +99,10 @@ def create_news_element(title, link, teaser_text, date_text, img_url=None):
 
 def create_publication_element(title, link, date_text):
     elements = []
-    elements.append(E.A(E.B(title), href=link))
+    if link == None:
+        elements.append(E.P(E.B(title)))
+    else:
+        elements.append(E.A(E.B(title), href=link))
     elements.append(E.P(date_text))
     return E.DIV(*elements, class_="news-block")
 
@@ -176,7 +179,7 @@ def main():
                     pub_url = f"https://committees.parliament.uk/publications/{item.get('id')}/documents/{documents[0].get('documentId')}/default/"
                 committee_blocks.append(create_publication_element(
                     item.get('description'), 
-                    item.get('additionalContentUrl'),
+                    pub_url,
                     format_date(item.get('publicationStartDate'))
                 ))
 
