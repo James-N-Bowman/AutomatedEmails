@@ -78,6 +78,14 @@ def create_meeting_element(title, link, witness_blocks=None):
         elements.extend(witness_blocks)
     return E.DIV(*elements, class_="news-block")
 
+def sanitise_for_url(text):
+    import re
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s]+', '-', text)
+    text = re.sub(r'-+', '-', text)
+    return text.strip('-')
+
 def create_news_element(title, link, teaser_text, date_text, img_url=None):
     elements = []
 
@@ -211,9 +219,14 @@ def main():
         if c_news:
             committee_blocks.append(E.H2("News"))
             for item in c_news:
+                url = item.get('url')
+                if not url or not url.startswith('http'):
+                    sanitised_name = sanitise_for_url(c_name)
+                    sanitised_heading = sanitise_for_url(item.get('heading', ''))
+                    url = f"https://committees.parliament.uk/committee/{item.get('source_committee_id')}/{sanitised_name}/news/{item.get('id')}/{sanitised_heading}/"
                 committee_blocks.append(create_news_element(
                     item.get('heading'),
-                    item.get('url'),
+                    url,
                     item.get('teaser'),
                     format_date(item.get('datePublished'))
                 ))
