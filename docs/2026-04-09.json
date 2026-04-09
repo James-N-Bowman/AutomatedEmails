@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "extracted_at": "2026-04-09T17:15:11.162104+01:00",
+        "range": [
+            "2026-04-08T08:00:00+01:00",
+            "2026-04-09T08:00:00+01:00"
+        ]
+    },
+    "events": [],
+    "publications": [],
+    "news": [
+        {
+            "heading": "Tourism: MPs launch inquiry into the future of UK\u2019s tourism industry",
+            "teaser": "A new inquiry from the Culture, Media and Sport Committee will examine the future of the UK\u2019s tourism industry.",
+            "intro": null,
+            "body": null,
+            "datePublished": "2026-04-09T10:02:50+00:00",
+            "imageUrl": "https://www.parliament.uk/contentassets/8792e84d83144f7f8b02fd402f258e46/adobestock_625082170.jpeg",
+            "imageAltText": "",
+            "thumbnailUrl": "https://www.parliament.uk/contentassets/8792e84d83144f7f8b02fd402f258e46/adobestock_625082170.jpeg?width=300&height=300&mode=crop",
+            "url": "https://committees.parliament.uk/committee/378/culture-media-and-sport-committee/news/212993/tourism-mps-launch-inquiry-into-the-future-of-uks-tourism-industry/",
+            "id": 212993,
+            "source_committee_id": 378
+        }
+    ]
+}
