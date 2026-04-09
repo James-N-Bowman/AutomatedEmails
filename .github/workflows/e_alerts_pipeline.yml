@@ -42,8 +42,8 @@ jobs:
       - name: Generate HTML
         run: python generate_html.py
 
-      - name: Send updates
-        run: python send_updates.py
+      #- name: Send updates
+      #  run: python send_updates.py
 
       - name: Commit and push any changed files
         run: |
